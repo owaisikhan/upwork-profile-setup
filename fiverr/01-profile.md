@@ -58,21 +58,14 @@ someone who does neither.
 
 ---
 
-## Profile description (600 char cap — this is 588)
+## Profile description (600 char cap — this is 599)
 
 ```
-I build the software small businesses actually run on — admin dashboards,
-internal tools and web apps in Next.js and Supabase.
+I build the software small businesses actually run on — admin dashboards, internal tools and web apps in Next.js and Supabase.
 
-A recent project is a management system a fuel business uses every day: daily
-readings, stock, customer credit, cash reconciliation and monthly profit, with
-two user roles and the money rules enforced in the database itself rather than
-in the form. It also ships as an offline Windows app with its own bundled
-Postgres.
+A recent project is a management system a fuel business uses every day: daily readings, stock, customer credit, cash reconciliation and monthly profit, with two roles and the money rules enforced in the database rather than in the form. It also ships as an offline Windows app with its own bundled Postgres.
 
-I also build marketing sites, Figma-to-code, e-commerce fronts and AI
-assistants. You get the deployed app, the code, and a README your next
-developer can follow.
+I also build marketing sites, Figma-to-code, e-commerce fronts and AI assistants. You get the deployed app, the code, and a README your next developer can follow.
 ```
 
 ## ⚠️ Don't link GitHub yet
