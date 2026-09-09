@@ -61,6 +61,12 @@ must equal what the meter sold, a meter can never run backwards, the customer
 ledger is append-only — live in the database as constraints and triggers, not in
 UI validation that a bad request can walk around.
 
+The same product also ships as a licensed offline Windows application. I built
+that licensing end to end — signed licence tokens verified locally, an activation
+window, and a soft restriction after the support date that refuses new entries
+while leaving every existing record readable and exportable, because a client who
+stops paying should never lose access to their own books.
+
 That's the standard I bring to smaller work too.
 
 WHAT I BUILD
@@ -73,19 +79,24 @@ WHAT I BUILD
 • Pixel-accurate builds from Figma or an existing site — I rebuilt a ~45-page
   commerce platform's marketing site to production fidelity
 • Mobile apps with React Native / Expo, and offline Windows desktop apps with
-  Electron, from the same codebase
-• AI features wired into real products — chat and assistants via the Vercel AI SDK
+  Electron — including licensed commercial software that runs with no internet
+  at all, on its own bundled database
+• AI features wired into real products — chat assistants that answer from your
+  own database and documents, with the security constraints that makes necessary
 
 STACK
 Next.js 16 (App Router), React 19, JavaScript/TypeScript, Tailwind CSS v4,
 Material UI, shadcn/Radix, Supabase (Postgres, Auth, RLS), Server Actions,
-Redux Toolkit, React Router, Recharts, GSAP/Motion, Expo + SQLite, Electron,
-Playwright, Vercel.
+Redux Toolkit, React Router, Recharts, GSAP/Motion, Expo + SQLite, Electron +
+embedded Postgres, LangGraph, Gemini, pgvector, Redis, Playwright, Vercel.
 
 HOW I WORK
 I ask what the thing is actually for before I write code. I keep the schema
 honest so the app can't be talked into storing something wrong. I deploy it,
 hand you the repo, and write a README your next developer can follow.
+
+I also work with a development partner, so if your project needs more capacity
+than one person we can take it on as a team.
 
 Available for fixed-price projects. Send me what you're trying to build and I'll
 tell you straight whether I'm the right fit — including when I'm not.
@@ -97,7 +108,8 @@ tell you straight whether I'm the right fit — including when I'm not.
 
 Next.js · React · Supabase · PostgreSQL · JavaScript · TypeScript ·
 Tailwind CSS · Web Application · Web Development · API Integration ·
-React Native · Responsive Design · Database Design · Node.js · UI/UX Design
+React Native · Electron · Responsive Design · Database Design · Node.js ·
+AI Integration · UI/UX Design
 
 ---
 
@@ -112,10 +124,13 @@ Period:   2020 – Present
 ```
 I build web applications and business software for small companies — Next.js and
 Supabase on the front, Postgres on the back. Recent work includes a full petrol
-station management system in daily production use, a consulting firm's website
-with an AI-assisted intake funnel and admin dashboard, and an Android app for
-offline ledger entry. I handle the whole job: schema, app, deployment, and the
-documentation that lets someone else pick it up.
+station management system in daily production use, the same product as a licensed
+offline Windows application whose licensing system I built end to end, a
+consulting firm's website with an AI-assisted intake funnel and admin dashboard,
+and an Android app for offline ledger entry. I work both solo and as part of a
+two-person product team, where I also review and merge my partner's work. I
+handle the whole job: schema, app, deployment, and the documentation that lets
+someone else pick it up.
 ```
 
 ## Education

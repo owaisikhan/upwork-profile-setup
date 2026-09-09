@@ -81,11 +81,27 @@ is staying at the starting rate for a year because it's working.
   one dispute is expensive.
 - Upwork takes 10%. Price with that in mind: a $500 project nets you $450.
 
+## With Ammar
+
+- [ ] **Agree in writing who owns the pump product** and how income splits,
+      before either of you is earning from it. Details in `06-partnership.md`.
+      Do this first; it gets harder every month you leave it.
+- [ ] **Get his sign-off** on every private repo and client project you plan to
+      show — `Petrol-Pump-Management-Software`, `Offline-Petrol-Pump-Manager`,
+      `saam-s-store`, `Coffee-Shop-Website`.
+- [ ] **Don't both bid the same job** from separate profiles.
+- [ ] **After 2–3 reviews each: form an Upwork Agency.** Then all the shared
+      work is legitimately agency work and the attribution question disappears.
+      Don't form it on day one — a brand-new agency with no history sells worse
+      than a new freelancer, because clients expect an agency to have a record.
+
 ## Skills gap worth closing (optional, 2–3 weeks)
 
 Your stack is strong and current. Two additions would widen the job pool:
-1. **Stripe integration.** A huge share of Upwork Next.js jobs mention payments,
-   and you have no payment work in your repos. One weekend project fixes this.
+1. **Stripe integration.** A huge share of Upwork Next.js jobs mention payments.
+   Between both your repos there's a full e-commerce storefront with orders and
+   a cart — but no payment processor anywhere. One weekend project fixes this,
+   and it unlocks the entire e-commerce job category.
 2. **TypeScript as default.** You use it in `coffee-shop-2` and `the-wild-oasis`
    but most projects are plain JavaScript. Many higher-paying posts require TS
    explicitly. Convert one existing project and you can list it honestly.

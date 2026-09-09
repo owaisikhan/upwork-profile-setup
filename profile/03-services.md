@@ -25,11 +25,17 @@ fixed price for defined work.
 | 9 | **AI feature integration** — chat, assistants, AI-assisted forms | Meridian (Vercel AI SDK) | $300–1,000 | 1–2 weeks |
 | 10 | **Bug fixing / rescue on an existing Next.js or React codebase** | Auth gap + race condition fixes | $25–35/hr or $150+ fixed | days |
 | 11 | **Site audit** — performance, responsiveness, broken flows | Playwright audit tool | $80–150 | 2 days |
+| 12 | **AI assistant over your own data** — chat that answers from your database and documents | E-commerce AI assistant | $600–2,000 | 2–4 weeks |
+| 13 | **Software licensing for a desktop app** — signed offline licences, activation windows, remote revocation | Pump Manager licensing | $500–1,500 | 1–3 weeks |
+| 14 | **E-commerce storefront** — catalog, cart, checkout, orders | Saamjh Store, Engine Clone | $600–2,500 | 2–5 weeks |
 
-**Where the money actually is for you:** rows 1, 5 and 8. Almost nobody on
-Upwork at your rate can honestly say they enforce business rules in Postgres or
-ship a Next.js app as an offline desktop installer. Rows 3 and 4 are where the
-volume is — use them to get your first reviews fast, then push toward row 1.
+**Where the money actually is for you:** rows 1, 5, 8, 12 and 13. Almost nobody
+on Upwork at your rate can honestly say they enforce business rules in Postgres,
+ship a Next.js app as an offline desktop installer with its own bundled database,
+or write a signed offline licensing system. Row 13 in particular is close to
+uncontested — plenty of people want to sell a desktop app and have no idea how to
+license one. Rows 3 and 4 are where the volume is; use them to get your first
+reviews fast, then push toward rows 1 and 12.
 
 ---
 
@@ -97,6 +103,16 @@ Small, specific, high-margin — and very few sellers offer it cleanly.
 | Basic | $150 | 4 days | Auth (email/password), profiles table, basic RLS |
 | Standard | $340 | 8 days | Schema design, migrations, roles, complete RLS policy set |
 | Premium | $700 | 14 days | Above plus triggers/constraints for business rules, storage, and integration into your existing app |
+
+### Catalog 5 — "I will build an AI chatbot that answers from your own database"
+Add this once you have 2–3 reviews. High demand, and your security layering is a
+real differentiator — most sellers point an LLM at a production database and hope.
+
+| Tier | Price | Delivery | Includes |
+|---|---|---|---|
+| Basic | $350 | 8 days | Chat UI, natural-language questions answered from one database table set, streaming replies |
+| Standard | $750 | 16 days | Above plus RAG over your documents, read-only role isolation and a SQL guard, semantic caching |
+| Premium | $1,500 | 28 days | Above plus voice in/out, inline charts, full request tracing with per-call token and cost breakdown |
 
 ---
 
