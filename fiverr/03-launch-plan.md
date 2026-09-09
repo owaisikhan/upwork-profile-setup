@@ -1,17 +1,20 @@
 # Fiverr launch plan
 
+> This assumes the conversion in `00-convert-existing-profile.md` is done — old
+> portfolio removed, video gigs paused or deleted, occupation and skills swapped.
+
 ## Week 1 — set up
 
-- [ ] Account, username (permanent — choose carefully), photo, tagline
-- [ ] Profile description from `01-profile.md`
-- [ ] Skills with honest levels
+- [ ] Profile description, tagline, occupation and skills from `01-profile.md`
+- [ ] Development portfolio items with real screenshots
+- [ ] Intro video (the 12th profile-strength point)
 - [ ] **Publish gigs 1, 3 and 5 only** — landing page, Figma-to-code, bug fixing.
       Fiverr gives new gigs a temporary rotation boost in search, and firing all
       seven at once burns it across gigs you can't service at under 30 hrs/week.
 - [ ] 3 images per gig (see below)
 - [ ] Fill in FAQs on every gig — they're read more than sellers expect
 - [ ] Set requirements: what you need from the buyer before you can start
-- [ ] Connect Payoneer for withdrawal
+- [ ] Payoneer and ID verification — already done on this account, just confirm
 - [ ] Install the mobile app and turn notifications on
 
 ## Gig images — the highest-return work here
@@ -63,7 +66,12 @@ to say yes to:
 
 ## Realistic expectations
 
-- First order: **1–6 weeks**, mostly waiting rather than working. This is normal.
+- First **development** order: **2–6 weeks**. Search relevance resets when you
+  change category — the algorithm has learned this is a video account and has to
+  relearn. Unavoidable, and not a sign you did it wrong.
+- Old video reviews still count toward the profile rating as long as those gigs
+  are paused rather than deleted. That rating measures on-time delivery and
+  communication, which transfers fine.
 - Fiverr takes **20%**. A $200 order nets $160.
 - Funds clear **14 days** after delivery (7 for higher levels). Don't plan around
   money you can't withdraw yet.
