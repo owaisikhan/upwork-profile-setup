@@ -7,21 +7,21 @@ so the algorithm has data on you.
 
 ---
 
-> **This is an existing account** (`@bilaledits__`, currently a video-editing
-> profile). Work through [`00-convert-existing-profile.md`](00-convert-existing-profile.md)
-> first — it covers the username decision, what to delete, and why the existing
-> gigs should be paused rather than deleted. This file is what the profile
-> becomes.
+> **Read [`00-convert-existing-profile.md`](00-convert-existing-profile.md)
+> first.** The existing account (`@bilaledits__`) has no gigs, orders or
+> reviews, so the plan is to have Fiverr delete it and start clean with a proper
+> username — Fiverr never lets you change one. That file has the order of
+> operations; this file is what the new profile contains.
 
 ## Account basics
 
 | Field | Value |
 |---|---|
-| **Username** | `@bilaledits__` — already set and **cannot be changed**. See `00-convert-existing-profile.md` for whether to keep it or start clean. |
-| **Display name** | Bilal Sagheer — already correct, leave it. |
-| **Photo** | The current one is good. Face, plain background, professional. No change needed. |
-| **Language** | English, Urdu — already set, leave it. |
-| **Country** | Pakistan — already set. |
+| **Username** | `bilaldev` / `bilalbuilds` / `bilal_codes` / `buildwithbilal`. **Permanent — cannot ever be changed.** Spend ten minutes on it. |
+| **Display name** | Bilal Sagheer |
+| **Photo** | Reuse the existing one — it's good. Face, plain background, professional. |
+| **Language** | English — Fluent or Conversational (honestly). Urdu — Native. |
+| **Country** | Pakistan. Don't hide it; it's caught at withdrawal anyway. |
 
 ## Professional tagline
 
@@ -31,8 +31,8 @@ I build business software in Next.js — dashboards, web apps and desktop tools
 
 ## Occupation
 
-**Change from Video & Animation → Programming & Tech → Web Development**, from
-[his real start year in development]. Skills:
+**Programming & Tech → Web Development**, from [his real start year in
+development] — not Video & Animation. Skills:
 Next.js, React, Supabase, PostgreSQL, JavaScript, Node.js, Electron, React Native.
 
 ## Skills (set levels honestly)
@@ -52,9 +52,9 @@ Next.js, React, Supabase, PostgreSQL, JavaScript, Node.js, Electron, React Nativ
 
 Don't mark everything Expert. Being calibrated costs nothing and reads as adult.
 
-**Remove every video skill** — Premiere Pro, After Effects, colour grading,
-motion graphics, video editing. All of it. A profile listing both reads as
-someone who does neither.
+**No video skills at all** — no Premiere Pro, After Effects, colour grading,
+motion graphics or video editing. A profile listing both reads as someone who
+does neither.
 
 ---
 
@@ -84,10 +84,10 @@ there's something there, and use live deployed URLs in the gig galleries instead
 
 ---
 
-## The intro video — the 12th profile-strength point
+## The intro video
 
-Fiverr is showing 11/12 with "Create an Intro Video" as the gap. Do it, and make
-it a development video. Script and reasoning in `00-convert-existing-profile.md`.
+It's the last profile-strength point and worth doing. Make it a development
+video — script in `00-convert-existing-profile.md`.
 
 Worth noting: video editing is a skill Bilal already has. It just isn't the thing
 he's selling any more. Most developers' intro videos are bad because they can't

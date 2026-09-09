@@ -12,7 +12,7 @@ Upwork and Fiverr profiles for Bilal Sagheer: Next.js + Supabase developer,
 | [`upwork/03-services.md`](upwork/03-services.md) | 14 services with pricing + 5 Project Catalog listings |
 | [`upwork/04-proposals.md`](upwork/04-proposals.md) | 4 proposal templates and the rules for using them |
 | [`upwork/05-launch-plan.md`](upwork/05-launch-plan.md) | Pre-launch checklist, 30-day plan, rate ladder |
-| [`fiverr/00-convert-existing-profile.md`](fiverr/00-convert-existing-profile.md) | **Start here for Fiverr** — converting the live `@bilaledits__` account from video editing |
+| [`fiverr/00-convert-existing-profile.md`](fiverr/00-convert-existing-profile.md) | **Start here for Fiverr** — closing the old `@bilaledits__` account and opening a clean one |
 | [`fiverr/01-profile.md`](fiverr/01-profile.md) | What the Fiverr profile becomes: description, skills, occupation |
 | [`fiverr/02-gigs.md`](fiverr/02-gigs.md) | 7 gigs with packages, inside Fiverr's character limits |
 | [`fiverr/03-launch-plan.md`](fiverr/03-launch-plan.md) | Gig images, first-order strategy, level progression |
@@ -51,18 +51,18 @@ React ordering app with Redux Toolkit.
 4. **Fix the `merdian` typo** in the consulting site URL before it goes in the
    portfolio.
 
-## Fiverr — an existing account, not a new one
+## Fiverr — start a clean account
 
-Bilal's Fiverr account (`@bilaledits__`) is live as a video-editing profile with
-11/12 profile strength. It's being converted, not created. Two things decide how
-that goes:
+Bilal's existing Fiverr account (`@bilaledits__`) is a video-editing profile with
+no gigs, and therefore no orders and no reviews. Nothing on it is worth keeping,
+and Fiverr **never** lets you change a username — so a dev profile would live at
+`fiverr.com/bilaledits__` permanently.
 
-1. **Check it for completed orders and reviews before touching anything.** If
-   there's even one review, keep the account and live with the username —
-   Fiverr never lets you change a username, but reviews are far harder to
-   replace than a handle. If it's genuinely empty, ask Fiverr support to delete
-   it, *then* create a clean account. Never run two at once; that bans both.
-2. **Pause the old gigs, don't delete them.** Deleting a gig deletes its reviews.
+So: ask Fiverr support to delete the old account, wait for written confirmation,
+*then* create a new one with a proper handle. Never run two at once — that bans
+both, and appeals rarely succeed. Use the waiting days for the screenshots, the
+intro video, the gig images, and the Upwork profile, which is independent and can
+go live today.
 
 Then work `upwork/05-launch-plan.md` and `fiverr/00-convert-existing-profile.md`
 from the top.

@@ -9,107 +9,84 @@ it's the one decision that can't be undone later.
 
 ---
 
-## 1. The username problem — decide this before anything else
+## 1. Start a clean account — the decision is made
 
-**Fiverr does not let you change your username.** Ever. So this account stays
-at `fiverr.com/bilaledits__` and every gig URL, every link you send a client,
-and the name on every message carries "edits" in it.
+**The account has no gigs, so it has no orders and no reviews.** There is
+nothing on it worth protecting.
 
-For a video editor that's a good handle. For a Next.js developer it's a
-mismatch a buyer will notice, and "edits" actively signals the wrong category.
+That resolves the one question that mattered. **Fiverr never lets you change a
+username** — so `fiverr.com/bilaledits__` would be the permanent address of a
+Next.js developer's profile, on every gig URL and every link sent to a client,
+with "edits" signalling the wrong category forever. You'd be carrying that for
+years to save an afternoon.
 
-You have two options, and the right one depends on one thing:
+Since the only things on the account are a photo, a description and four
+portfolio images — all of which are being replaced anyway — the trade is easy.
+Start clean and get the handle right.
 
-### Option A — keep the account (do this if there are ANY completed orders or reviews)
+### Do it in this order. The order is the whole point.
 
-What you'd be keeping is worth more than a clean handle:
-- Completed order history and reviews
-- Seller level, if any
-- Response-rate and delivery history
-- ID verification and payment method already set up
-- Account age
+1. **Contact Fiverr Customer Support** and ask them to permanently delete
+   `@bilaledits__`. Help → Contact Support → Account → request deletion. Say
+   you're closing the account; you don't need to explain why.
+2. **Wait for written confirmation** that it's deleted. This usually takes a few
+   days. Don't skip ahead.
+3. **Create the new account** with a fresh email address. A deleted account's
+   email often can't be reused, so have a second one ready.
+4. Re-do ID verification and connect Payoneer.
 
-A buyer decides from the gig card — thumbnail, title, price, rating. The
-username is small text most never read. A mismatched handle costs you something,
-but it costs far less than starting from zero reviews.
+**Do not create the new account while the old one is live.** Fiverr allows one
+seller account per person. Two active accounts gets both permanently banned, and
+appeals almost never succeed. The wait is the price of doing this safely.
 
-If you take this option, **don't draw attention to it.** No "formerly a video
-editor" line, no explanation in the description. Just the new profile.
+### Username
 
-### Option B — start a clean account (do this ONLY if there are zero orders and zero reviews)
+Pick from: `bilaldev`, `bilalbuilds`, `bilal_codes`, `bilalwebdev`,
+`buildwithbilal`. Short, no trailing numbers, no trailing underscores, no year.
 
-If the account has nothing on it but a profile, there's nothing to protect and
-the handle is worth fixing.
+**This is permanent.** Spend ten minutes on it, not ten seconds. Say it out loud
+as if reading it to a client on a call.
 
-**Do it in this order — this matters:**
-1. Contact Fiverr Customer Support and ask them to **delete or permanently
-   deactivate** `@bilaledits__` first.
-2. Wait for confirmation.
-3. Then create the new account with a proper username.
+### What carries over
 
-**Do not create the second account first.** Fiverr's terms allow one seller
-account per person. Running two gets both permanently banned, and appeals rarely
-succeed. Going through support is slower and it's the only safe route.
+Nothing automatically, but nothing valuable is lost either:
 
-Good usernames: `bilaldev`, `bilalbuilds`, `bilal_codes`, `bilalwebdev`.
-Short, no trailing numbers, no underscores at the end.
+| | Status |
+|---|---|
+| Reviews, orders, seller level | None exist |
+| Profile photo | Reuse it — it's good |
+| ID verification | Re-do, ~1 day |
+| Payoneer | Reconnect |
+| Account age | Lost, worth very little with no order history |
+| Username | **Fixed permanently — the whole reason for doing this** |
 
-### My recommendation
+### While you wait for the deletion
 
-**Check the account for completed orders right now.** If there's even one review,
-take Option A — reviews are the hardest thing to get on Fiverr and the handle is
-a cosmetic problem. If it's genuinely empty, take Option B and get the handle
-right, because you'll be living with it for years.
+Don't sit idle. Do the parts that aren't account-bound:
+- Take the portfolio screenshots (section 5)
+- Write and record the intro video (section 7)
+- Design the gig images (`03-launch-plan.md`)
+- Set up the **Upwork** profile — that's independent and can go live today
 
 ---
 
-## 2. What to delete
+## 2. Set up the new account
 
-Do all of this before publishing anything new, so the profile is never half one
-thing and half the other.
+Nothing to delete — it's a fresh account. Fill these in from scratch:
 
-- [ ] **Portfolio items** — all four video thumbnails (the Marvel tee, the
-      garment shots, the fashion photos). Delete them. There is no version of
-      the new positioning where fashion photography helps.
-- [ ] **Existing video-editing gigs** — see the next section, it's not a simple
-      delete.
-- [ ] **Any intro video** showing editing work.
-- [ ] **Skills** — remove Premiere Pro, After Effects, video editing, colour
-      grading, motion graphics, and anything else from that world. All of it.
-- [ ] **Occupation** — change from video/animation to Programming & Tech.
-
-## 3. The existing gigs — pause, don't delete (usually)
-
-**Deleting a gig deletes its reviews with it.** Those reviews are the most
-valuable thing on the account.
-
-- **Gigs with reviews** → **pause** them, don't delete. A paused gig is invisible
-  to buyers but its reviews still count toward your profile rating and seller
-  level. Leave them paused permanently.
-- **Gigs with no reviews and no orders** → delete. They're dead weight and they
-  keep the account categorised as video.
-
-If every gig has reviews and you pause all of them, you'll have zero active gigs
-for a day while you build the new ones. That's fine — build the first new gig
-before pausing the last old one if you want to avoid the gap.
-
-## 4. Rewrite the profile itself
-
-Replace, in this order:
-
+- [ ] **Display name** → Bilal Sagheer
 - [ ] **Tagline** → `I build business software in Next.js — dashboards, web apps and desktop tools`
 - [ ] **Description** → the 588-character version in `01-profile.md`
 - [ ] **Occupation** → Programming & Tech → Web Development, with his real start
-      year in development
+      year in development. **Not** Video & Animation.
 - [ ] **Skills** → Next.js, React, Supabase, JavaScript, Tailwind CSS,
       PostgreSQL, TypeScript, Electron, React Native, Node.js — levels as set in
-      `01-profile.md`
-- [ ] **Photo** → the current one is fine. Face, plain background, professional.
-      No reason to change it.
-- [ ] **Languages** → keep as-is (English, Urdu).
-- [ ] **Education / certifications** → add anything real on the development side.
+      `01-profile.md`. No video skills at all.
+- [ ] **Photo** → reuse the existing one. Face, plain background, professional.
+- [ ] **Languages** → English, Urdu
+- [ ] **Education / certifications** → anything real on the development side
 
-## 5. Rebuild the portfolio
+## 3. Build the portfolio
 
 Add the development projects with real screenshots. Source material and full
 descriptions are in `../upwork/02-portfolio.md` — the same projects work here,
@@ -123,17 +100,17 @@ Priority order for Fiverr, which rewards visual proof over technical depth:
 
 1440px screenshots, real content, customer names and balances blurred.
 
-## 6. Build the new gigs
+## 4. Build the gigs
 
 From `02-gigs.md`. Publish **1, 3 and 5 first** — landing page, Figma-to-code,
 bug fixing. Not all seven.
 
 Gig images are more than half the decision; specs are in `03-launch-plan.md`.
 
-## 7. The intro video — 11/12 is the missing point
+## 5. The intro video
 
-Fiverr is telling you an intro video is the one thing left. Do it, and make it a
-**development** video: 30–60 seconds, your voice, screen recording of a real
+On the old account this was the last profile-strength point, and it'll be the
+same on the new one. Do it, and make it a **development** video: 30–60 seconds, your voice, screen recording of a real
 project — click through the dashboard, show the roles working, show the site
 loading fast.
 
@@ -161,27 +138,21 @@ right fit. Thanks for watching.
 
 ---
 
-## What to expect after the switch
+## What to expect
 
-Be realistic about this, because it's the part that surprises people:
-
-- **Your search relevance resets.** Fiverr's algorithm has learned this account
-  is a video-editing account. Ranking it for "Next.js developer" starts close to
-  scratch, and it takes weeks of impressions and clicks in the new category to
-  rebuild. This is unavoidable and it is not a sign you did it wrong.
-- **Old reviews still count toward your rating**, even paused. That's the whole
-  reason for pausing rather than deleting.
-- **A buyer may see a 5-star rating earned on video work.** That's fine — it
-  proves you deliver on time and communicate well, which is what ratings actually
-  measure. Don't explain it. Nobody asks.
-- **First dev order: 2–6 weeks.** Answer Fiverr Briefs daily in the meantime;
-  that's where a repositioned seller gets seen fastest.
+- **First order: 1–6 weeks**, mostly waiting rather than working. A brand-new
+  seller with no reviews converts badly no matter how good the gigs are; the
+  $35 bug-fixing gig exists specifically to break that deadlock.
+- **New gigs get a temporary search boost.** Publish 1, 3 and 5 to use it, not
+  all seven at once.
+- **Answer Fiverr Briefs daily.** New sellers get seen there in a way they don't
+  in search.
 
 ## Don't
 
-- Don't run video gigs and dev gigs on the same profile "just in case". A profile
-  that does both reads as a person who does neither, and it confuses the
-  algorithm about which category to rank you in. Commit.
+- Don't create the new account before the old one is confirmed deleted.
+- Don't list video skills or video gigs "just in case". A profile that does both
+  reads as someone who does neither, and it confuses the algorithm about which
+  category to rank you in. Commit to one.
 - Don't mention the video-editing past anywhere on the profile.
-- Don't create a second account while the first is live.
-- Don't delete a gig that has reviews.
+- Don't rush the username. It's the one thing you can't fix later.
