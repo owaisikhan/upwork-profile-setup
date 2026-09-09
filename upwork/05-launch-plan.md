@@ -1,99 +1,89 @@
-# 30-day launch plan — Bilal Sagheer
+# 30-day launch plan
 
-## Before the first proposal
+Ordered by what actually moves the needle. Do it top to bottom.
 
-- [ ] **Fill in the employment history properly.** Eight years is the single
-      biggest advantage this profile has over every other new one. A thin
-      employment section throws it away.
-- [ ] **Fill in the `[FILL IN]` role lines** in `02-portfolio.md` items 6–8.
-      Don't publish those with a placeholder, and don't guess.
-- [ ] **Get sign-off from Owais and Ammar** on every shared and private repo
-      before it goes in the portfolio.
-- [ ] **Add descriptions to his GitHub repos.** `bill-api-gatway`, `vuejsadmin`,
-      `vuejsapi` and `ebay-php-scrapper` are empty or thin. Clients click through.
-- [ ] **Fix the `bill-api-gatway` typo** (gatway → gateway) and the
-      `jetstream-inertai` typo (inertai → inertia). Small, but a client reading
-      a GitHub profile notices misspelled tech names.
-- [ ] **Write a README for `ebay-php-scrapper`.** It's currently a description
-      line and nothing else, and scraping is a service he's selling.
-- [ ] His profile README is genuinely good — leave it alone.
-- [ ] **Screenshots** of the admin panels, dashboards and any product UI he can
-      show. Blur client data.
-- [ ] Profile photo, ID verification, payment method (Payoneer).
+## Before you write a single proposal
+
+- [ ] **Don't link GitHub.** `github.com/bilal-sagheer` has nothing public in
+      it, and a linked GitHub that opens on an empty page is worse than no link.
+      Leave the field blank until there's something there.
+- [ ] **Use live URLs instead.** Deployed sites do the same job of proving the
+      work is real, and several of the portfolio projects have them:
+      `merdian-consulting.vercel.app`, `coffee-shop-2-nu.vercel.app`,
+      `the-wild-oasis-thechamps.vercel.app`, `services-thechamps.vercel.app`,
+      `pump-manager-display.vercel.app`.
+- [ ] **Screenshots of every project.** 1440px wide, real content. Blur customer
+      names, balances and phone numbers on anything from the pump system. This is
+      the single highest-return hour on this list.
+- [ ] **Build a personal portfolio site** and point a domain at it
+      (`bilalsagheer.dev` or similar, ~$12/yr). A custom domain in an Upwork
+      profile is worth more than it costs, and it gives you a link that isn't an
+      empty GitHub.
+- [ ] **Read every portfolio card out loud and check you can defend it.** A
+      client will ask follow-ups on a call. Cut any project you can't talk
+      through in detail — six you can defend beats nine you can't.
 
 ## Week 1 — set up
 
-- [ ] Title, overview, rate, skills, employment — from `01-profile.md`
-- [ ] Portfolio items 1–5 (his own) with images
-- [ ] Portfolio items 6–8 (team) with roles filled in and the collaboration
-      checkbox ticked
-- [ ] Publish the 3 Project Catalog listings from `03-services.md`
-- [ ] Upwork Readiness Test → Rising Talent path
-- [ ] Availability badge on
+- [ ] Profile photo, title, overview, skills, rate — from `01-profile.md`
+- [ ] All 6 portfolio items with images — from `02-portfolio.md`
+- [ ] ID verification (do this immediately; it gates some clients)
+- [ ] Payment method connected (Payoneer works well in Pakistan)
+- [ ] Publish all 4 Project Catalog listings — from `03-services.md`
+- [ ] Take the Upwork Readiness Test → gets you the "Rising Talent" path
+- [ ] Set availability badge to available
 
-## Week 1–2 — proposals
+## Week 1–2 — first proposals
 
-**5 a day**, tailored. Target jobs where:
-- Payment method **verified**
-- Client has **hired before**
-- Budget **$200+** fixed or **$20+/hr**
+Target **5 proposals a day**, tailored, on jobs where:
+- Payment method is **verified**
+- Client has **hired before** with decent review history
+- Budget is **$150+** fixed or **$15+/hr**
 - Posted in the **last 2 hours**
-- Under **10 proposals** so far
+- Fewer than **10 proposals** so far
 
-**Prioritise in this order:**
-1. AI integration / automation — least competition, highest rate
-2. Laravel + Vue applications — his core depth
-3. Scraping and API integration — small, fast, quick reviews
-4. CodeIgniter / legacy PHP — almost nobody bids on these
+Deliberately bid slightly low on your first 2–3 jobs. You are buying reviews,
+not earning. Once you have 3 five-star reviews the economics flip completely.
 
-Take the first 2–3 jobs slightly cheap. You're buying reviews, not earning.
-A $200 job delivered in 4 days with 5 stars beats a $1,500 project that drags six
-weeks and ends in a dispute.
+**First-job filter:** take small, boring, well-defined jobs. A $150 landing page
+you deliver in 3 days with a 5-star review is worth more right now than a $1,200
+project that drags 6 weeks and ends in a dispute.
 
-## Week 3–4
+## Week 3–4 — compound
 
-- [ ] Ask every client for a review the day you deliver
-- [ ] After 3 five-star reviews: **raise to $35/hr**
-- [ ] Refresh the portfolio with delivered client work
-- [ ] Start declining bad-fit jobs
+- [ ] After 2 completed jobs: ask every client for a review the day you deliver
+- [ ] After 3 five-star reviews: **raise to $25/hr**
+- [ ] Refresh portfolio with the client work you just delivered
+- [ ] Start turning down the bad-fit jobs
 
-## Rate ladder
+## The rate ladder
 
 | Milestone | Rate |
 |---|---|
-| Start | $25/hr |
-| 3 five-star reviews | $35/hr |
-| 10 reviews / $1,500 earned | $45/hr |
-| Top Rated | $55/hr+ |
+| Now | $15/hr |
+| 3 five-star reviews | $25/hr |
+| 10 reviews / $1,000 earned | $35/hr |
+| Top Rated badge | $45/hr+ |
 
-Raise at each mark. The common mistake is staying at the opening rate for a year
-because it's working.
-
-## With the team
-
-- [ ] Settle income splits and ownership of the pump product **in writing**,
-      before anyone is earning. Details in `06-team.md`.
-- [ ] Never bid the same job from two profiles.
-- [ ] Never let two people answer as the same freelancer — that's an
-      account-closure offence.
-- [ ] After 2–3 reviews: **form the Upwork Agency**, with Bilal as owner.
-- [ ] Agree who joins which client call. If it's deep on Postgres or Electron,
-      that's Owais.
+Raise the rate as soon as you hit each mark. The mistake almost everyone makes
+is staying at the starting rate for a year because it's working.
 
 ## Realistic expectations
 
-- First job: **2–4 weeks** of consistent daily proposals. His 8-year history and
-  the AI/automation angle should make this faster than a typical new profile.
-- Expect 30–50 proposals before the first win.
-- Upwork takes 10%. A $500 project nets $450.
+- First job: **2–5 weeks** of consistent daily proposals. Not days.
+- Expect ~40–60 proposals before the first win. That's normal, not failure.
+- Job Success Score only appears after several completed contracts. Protect it —
+  one dispute is expensive.
+- Upwork takes 10%. Price with that in mind: a $500 project nets you $450.
 
-## Worth adding in the background
+## Skills gap worth closing (optional, 2–3 weeks)
 
-1. **A public MCP server or automation demo on GitHub.** His strongest selling
-   point — the automation and AI work — is entirely invisible on his GitHub
-   because it lives in private product repos. One small public repo showing an
-   MCP server or a tool-calling workflow would make the claim verifiable, and
-   that's worth more than another portfolio paragraph.
-2. **Stripe.** Between all three of them there's a full e-commerce storefront
-   with orders and carts and no payment processor anywhere. A large share of
-   Laravel jobs mention payments.
+The stack is strong and current. Two additions would widen the job pool:
+1. **Stripe integration.** A huge share of Upwork Next.js jobs mention payments,
+   and there's no payment processor anywhere in the portfolio. One weekend
+   project fixes this and unlocks the entire e-commerce job category.
+2. **TypeScript as default.** Most of the portfolio is plain JavaScript. Many
+   higher-paying posts require TypeScript explicitly. Build one project in TS
+   and you can list it honestly.
+
+Neither blocks you from starting today.

@@ -1,153 +1,124 @@
-# Proposal templates — Bilal Sagheer
+# Proposal templates
 
-## Rules that matter more than the template
+## The rules that matter more than the template
 
-1. **First two lines are everything** — that's all the client sees in the list.
-   Never open with "Dear Sir/Madam" or "I am a passionate developer".
+1. **First two lines are everything.** That's all the client sees in the list.
+   Never open with "Dear Sir/Madam", "I hope this message finds you well", or
+   "I am a passionate developer with 5 years experience". Open with their problem.
 2. **Reference something specific from their post.** One concrete detail proves
-   you read it, and beats 90% of proposals on its own.
-3. **120–180 words.** Long proposals get skimmed to nothing.
-4. **One question at the end.** A reply is the whole game.
-5. **Lead with the eight years.** It's Bilal's single biggest advantage over
-   every other new profile, and it costs one sentence.
-6. **Apply within an hour of posting.** Response rates fall off a cliff after
-   the first ~10 proposals land.
-7. **Fewer, better-fitting proposals.** 5 tailored beat 30 pasted, and cost
-   fewer Connects.
+   you read it. This alone beats 90% of proposals.
+3. **Short.** 120–180 words. Long proposals get skimmed to nothing.
+4. **One question at the end.** It invites a reply, and a reply is the whole game.
+5. **Don't attach a CV.** Link a live URL instead.
+6. **Apply within 1 hour of posting** where you can. Response rate falls off a
+   cliff after the first ~10 proposals land.
+7. **Spend Connects on fewer, better-fitting jobs.** 5 tailored proposals beat
+   30 pasted ones, and cost less.
 
 ---
 
-## Template A — Laravel application / admin panel
+## Template A — dashboard / internal tool / business app
 
 ```
 Hi [Name],
 
-[One sentence naming their specific problem.]
+[One sentence naming their specific problem — e.g. "Tracking stock in a
+spreadsheet breaks the moment two people edit it on the same day."]
 
-I've been building Laravel applications for eight years, and admin panels with
-roles and permissions are most of what I do. The part people usually
-underestimate is the permission system — every project starts as "admin and
-user" and turns into five roles and thirty permissions about three weeks in, so
-I build that properly from the start rather than retrofitting it.
+I've built this exact shape of system before: a management app for a fuel
+business in daily production use — daily entries, stock, customer credit
+ledgers, cash reconciliation and monthly profit reports, with two user roles and
+permissions enforced in the database itself rather than just hidden in the UI.
 
-For your project I'd [one specific approach tied to their post].
+For your project I'd [one specific technical approach, 1–2 sentences tied to
+their post].
 
-Laravel with Vue and Inertia, so it behaves like a single-page app without you
-maintaining two codebases. You get the deployed application, the repository and
-documentation.
+I work in Next.js and Supabase (Postgres). You get the deployed app, the GitHub
+repo, and a README your next developer can follow.
 
-One question: [specific question about their roles or data].
+One question: [specific question about their data or workflow — e.g. "how many
+people will be entering data at once, and do they all need to see the totals?"]
 
 — Bilal
 ```
 
-## Template B — AI / automation
+## Template B — landing page / marketing site
 
 ```
 Hi [Name],
 
-[Reference their specific workflow or the manual step they described.]
+[Reference their business or the look they described in one line.]
 
-Most "add AI" projects are really automation projects with a language model in
-the middle — and the value is in the workflow around it: what triggers it, what
-it's allowed to touch, and what happens when it's wrong.
+I build sites in Next.js — the same stack I use for production business software,
+so they load fast, work properly on phones, and you own the code rather than
+renting a page builder.
 
-That's what I build. I currently lead an automation module powering several
-products: an event-driven trigger-action engine, integrations against both the
-OpenAI and Anthropic APIs, agentic workflows with tool-calling, and Model Context
-Protocol servers that give an assistant a defined set of capabilities rather than
-open access.
+Recent examples:
+• merdian-consulting.vercel.app — consulting site with a multi-step intake form
+• coffee-shop-2-nu.vercel.app — built pixel-accurate from a design handoff
 
-For yours I'd [specific approach].
+I can have a first version live for you to look at in [X] days, deployed, before
+you commit to anything further.
 
-What does the process look like today, step by step, when a person does it?
+Do you have designs already, or would you like me to propose a direction?
 
 — Bilal
 ```
 
-## Template C — API build or integration
+## Template C — Figma → code
 
 ```
 Hi [Name],
 
-You need [their integration] connected to [their system].
+I saw you need [N] screens built out from Figma.
 
-I've built and integrated APIs in Laravel for eight years — REST and GraphQL,
-payments, marketplaces, third-party services, and the ones with bad or missing
-documentation.
+Pixel accuracy is the part most people get wrong — they eyeball the spacing and
+it drifts. I work from the design's actual tokens and measurements, so the build
+matches the file rather than approximating it. I most recently did this across a
+45-page site and the result matched production.
 
-I'd build this as a separate API layer rather than wiring it directly into your
-app, so when you add a second consumer later — a mobile app, a partner, a
-dashboard — it isn't a rewrite.
+Next.js, React and Tailwind, fully responsive, clean reusable components.
 
-Can you send me the API documentation, or the name of the service? I'll come back
-with an exact price rather than a range.
+Can you share the Figma link (view access is enough)? I'll come back with an
+exact price and timeline rather than a range.
 
 — Bilal
 ```
 
-## Template D — scraping / data extraction
+## Template D — bug fix / rescue on an existing codebase
 
 ```
 Hi [Name],
 
-You need [X data] from [site], as [format].
+[Restate their bug in one line, in your own words — proves you understood it.]
 
-I've built scrapers for eBay and other product sources. The parsing is never the
-hard part — the hard parts are pacing so you don't get blocked, retries for the
-requests that fail anyway, listings whose structure isn't quite like the others,
-and resuming a run that died three thousand records in.
+Based on your description this is most likely [specific probable cause]. I've hit
+this before — most recently an admin authorisation gap and a login race condition
+in a Next.js + Supabase app, both traced and fixed.
 
-I build these to run unattended and produce clean structured output you can load
-straight into a database, not a script that works once on my machine.
+I'd start by reproducing it, then send you the diagnosis before writing any fix,
+so you know what you're paying for.
 
-Two questions: roughly how many records, and do you need it once or on a
-schedule?
-
-— Bilal
-```
-
-## Template E — when the project needs the whole team
-
-Use this only when the post genuinely calls for more than one person.
-
-```
-Hi [Name],
-
-[Reference the specific scope.]
-
-This is bigger than a one-person job done well, so I'll be straight: I work with
-two other developers. I'm the Laravel, API and automation side and I manage
-delivery; they're Next.js and React front-end and Postgres. Eight years for me,
-and we ship a licensed commercial product together, so this isn't an ad hoc
-arrangement.
-
-That means [specific benefit — parallel work on front and back end, or a
-realistic timeline they can't get from one person].
-
-For your project I'd [approach].
-
-Would you like me to break this into milestones with a timeline so you can see
-how it would run?
+Can you give me read access to the repo, or paste the error and the relevant file?
 
 — Bilal
 ```
 
 ---
 
-## Screening questions
+## Answering the screening questions
 
-Most posts have 1–3 required questions. Most applicants write one line. Write
-3–4 sentences with a specific example each — it's the cheapest way to outrank
-people with far better profiles.
+Most posts include 1–3 required questions. Most applicants write one line.
+Write 3–4 sentences with a specific example each — it's the cheapest way to
+outrank people with better profiles than yours.
 
 ## When they reply
 
-- Take the call if offered. As the client-facing partner this is Bilal's
-  advantage — use it.
-- **Never take payment off Upwork.** Instant permanent ban, and the review
-  history is the whole asset.
-- Fixed price: **milestones funded in escrow before starting.** Always.
-- Deliver something small on day 2, not week 3.
-- If the conversation goes deep on the Next.js and Postgres work, get Owais on
-  the call rather than improvising.
+- Get on a call if they offer — it converts far better than chat. Be ready to
+  talk through any portfolio project in detail; that's what the call is for.
+- **Never take payment off Upwork.** Not even "just this once via PayPal".
+  It's an instant permanent ban and you lose everything you're building here.
+- For fixed price, insist on **milestones funded in escrow before you start**.
+  Escrow is the protection; unfunded fixed-price work is free work.
+- Deliver something small early — day 2, not week 3. It converts a nervous
+  client into a repeat one.

@@ -1,53 +1,53 @@
 # Freelance profile kit — Bilal Sagheer
 
-Upwork and Fiverr profiles for **Bilal Sagheer**, who is setting up the accounts
-and finding work for a three-person team: Bilal (Laravel, APIs, automation, AI,
-delivery management), Owais Khan and Ammar Sagheer (Next.js, React, Supabase,
-Electron).
-
-> **⚠️ Pending verification.** Everything in `upwork/` and `fiverr/01-profile.md`
-> is written from **`github.com/bilalsagheer13`**, found by searching GitHub for
-> "Bilal Sagheer". Confirm that is the right account before publishing anything.
-> If it isn't, the structure holds but the stack, portfolio, rate and gig lineup
-> all need redoing.
->
-> **`fiverr/02-gigs.md` is still the old Next.js/Supabase version** written for
-> Owais. Not yet converted to Bilal's stack.
+Upwork and Fiverr profiles for Bilal Sagheer: Next.js + Supabase developer,
+1–3 years, building business software.
 
 ## Files
 
-| File | Contents | Status |
-|---|---|---|
-| `upwork/01-profile.md` | Title, overview, rate, skills, employment | Bilal |
-| `upwork/02-portfolio.md` | 5 of his own projects + 3 team projects | Bilal — has `[FILL IN]` role lines |
-| `upwork/03-services.md` | 11 services with pricing + 3 Catalog listings | Bilal |
-| `upwork/04-proposals.md` | 5 proposal templates | Bilal |
-| `upwork/05-launch-plan.md` | Pre-launch fixes, 30-day plan, rate ladder | Bilal |
-| `upwork/06-team.md` | Presenting three developers honestly; the Agency route | Bilal |
-| `fiverr/01-profile.md` | Fiverr account setup and description | Bilal |
-| `fiverr/02-gigs.md` | 7 gigs with packages, within Fiverr's char limits | **Still Owais's stack — needs rewrite** |
+| File | Contents |
+|---|---|
+| [`upwork/01-profile.md`](upwork/01-profile.md) | Title, overview, rate, skills, employment — paste-ready |
+| [`upwork/02-portfolio.md`](upwork/02-portfolio.md) | 9 portfolio entries, written out in full |
+| [`upwork/03-services.md`](upwork/03-services.md) | 14 services with pricing + 5 Project Catalog listings |
+| [`upwork/04-proposals.md`](upwork/04-proposals.md) | 4 proposal templates and the rules for using them |
+| [`upwork/05-launch-plan.md`](upwork/05-launch-plan.md) | Pre-launch checklist, 30-day plan, rate ladder |
+| [`fiverr/01-profile.md`](fiverr/01-profile.md) | Fiverr account setup and description |
+| [`fiverr/02-gigs.md`](fiverr/02-gigs.md) | 7 gigs with packages, inside Fiverr's character limits |
+| [`fiverr/03-launch-plan.md`](fiverr/03-launch-plan.md) | Gig images, first-order strategy, level progression |
 
 ## Positioning
 
-**Laravel and Vue, with automation and AI integration as the differentiator.**
-From `bilalsagheer13`: Laravel 10 + Vue 3 + Inertia admin panels with roles and
-permissions, a Laravel setup package, an eBay PHP scraper, a hotel management
-API. From his profile README: 8+ years, an event-driven trigger-action
-automation engine, OpenAI and Anthropic API integrations, MCP tools and servers,
-agentic tool-calling, and an Associate Project Manager role.
+**Business apps on Next.js + Supabase** — admin dashboards, internal tools and
+database work, rather than generic web development. Thinner competition and
+better clients than the landing-page pool.
 
-Opening rate **$25/hr** with a ladder to $45. This is deliberately above the $15
-discussed earlier — that figure suited a developer with ~2 years of visible
-history, and reads as a warning sign on a profile claiming eight.
+Upwork: **$15/hr** opening rate, under 30 hrs/week, aimed at fixed-price project
+work, with a ladder to $35. Fiverr: fixed-price gigs priced ~20% above the Upwork
+equivalents because the platform fee is double.
 
-## Open items before publishing
+## Portfolio projects covered
 
-1. **Confirm the GitHub account is `bilalsagheer13`.**
-2. Rewrite `fiverr/02-gigs.md` for Bilal's stack (Laravel, APIs, AI/automation,
-   scraping) instead of Next.js.
-3. Fill in the `[FILL IN]` role lines on team portfolio items 6–8, and tick
-   Upwork's "I worked on this with others" box on each.
-4. Get Owais's and Ammar's sign-off on the private and client repos.
-5. Fill in real employment dates — 8 years of history is this profile's single
-   biggest advantage and a thin section throws it away.
-6. Settle income splits and ownership of the pump product in writing.
+Petrol station management system (production, RLS-enforced money rules, two
+roles) · consulting site with AI intake funnel and admin dashboard · 45-page
+commerce marketing site · offline Windows desktop builds with bundled Postgres
+and signed licensing · committee manager with solvency forecasting · e-commerce
+AI assistant (SQL generation behind a read-only role, RAG, voice, caching) ·
+Expo Android ledger app · PSX RSI dashboard (Electron, ~750 equities) ·
+React ordering app with Redux Toolkit.
+
+## Before publishing — four things
+
+1. **Don't link GitHub.** `github.com/bilal-sagheer` has nothing public in it,
+   and a link that opens on an empty page costs more than no link. Use the live
+   deployed URLs instead, and build the profile site.
+2. **Screenshots of everything**, 1440px, real content, with customer names and
+   balances blurred. Highest-return hour on the whole list.
+3. **Read every portfolio card and check it can be defended on a call.** Clients
+   ask follow-ups — architecture, why a decision was made, what went wrong. Six
+   projects you can talk through in detail beat nine you can't. Items 1–3 are the
+   ones worth being fluent on.
+4. **Fix the `merdian` typo** in the consulting site URL before it goes in the
+   portfolio.
+
+Then work `upwork/05-launch-plan.md` and `fiverr/03-launch-plan.md` from the top.

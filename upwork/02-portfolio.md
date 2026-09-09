@@ -1,295 +1,356 @@
-# Portfolio items — Bilal Sagheer
+# Portfolio items — 9 entries, paste-ready
 
-Two groups: **his own work** (items 1–5) and **team projects he collaborates on**
-(items 6–8). Add his own first — they carry his name honestly and answer the
-"walk me through how you built this" question without qualification.
+Upwork shows portfolio as cards: **title, one-line description, long
+description, skills, image**. Add them in this order — the first three carry the
+most weight.
 
-For every team project, tick Upwork's **"I worked on this with others"** option
-and lead the description with his actual role. Reasoning in `06-team.md`.
-
-> Screenshots decide whether a card gets read. Take 3–4 clean captures per item
-> at 1440px with real content, and blur client data.
+> **Screenshots matter more than the text.** A card with no image gets skipped.
+> Take 3–4 clean captures per project (desktop, 1440px, real content not lorem
+> ipsum). Blur or replace real names, balances and phone numbers before
+> uploading anything from the pump system.
 
 ---
 
-## 1. Laravel + Vue admin panel with roles and permissions
+## 1. Petrol Station Management System — daily operations, stock & ledgers
 
-**One-liner:** Single-page admin panel on Laravel and Vue 3 with multi-role user
-management, granular permissions and an elegant, minimal interface.
+**One-liner:** Full business management system for a fuel station: meter
+readings, stock, customer credit, cash reconciliation and monthly profit.
 
 **Long description:**
 ```
-A complete admin panel built as a single-page application: Laravel 10 on the
-back, Vue 3 and Inertia on the front, so it behaves like an SPA without the
-overhead of maintaining a separate API and front-end app.
+A complete operations system for a petrol station, in daily production use.
 
-WHAT'S IN IT
-• Multi-role user management — create roles, assign granular permissions, and
-  have the interface reflect what each role can actually do
-• Authentication built on Laravel Jetstream: registration, password reset,
-  two-factor, session management, API tokens
-• Media handling with image processing and S3-compatible storage
-• Rich text editing, searchable and paginated data tables, sortable listings
-• Ziggy for route handling, so the front end and back end never disagree about
-  a URL
+It replaces a stack of paper registers and one enormous spreadsheet. Staff enter
+each nozzle's closing meter reading in the evening; the system works out litres
+and value at today's rate, splits the day into cash and credit, and tells the
+owner what cash should be in the drawer — before it's counted, so a mismatch is
+caught while it's still fixable.
 
-WHY THIS SHAPE
-Most projects that need an admin panel need the same eight things and then one
-unusual one. This is built so the eight are already done and the ninth is a
-clean place to add. Roles and permissions in particular are the part people
-underestimate — "admin and user" becomes five roles and thirty permissions
-about three weeks into every project.
+WHAT IT COVERS
+• Daily nozzle readings with opening figures carried forward automatically
+• Fuel purchases, tank dip readings and lubricant stock, with gain/loss tracking
+• Per-customer credit ledgers — slips are recorded against the customer and
+  their balance updates itself
+• Lubricant counter sales, cash or credit, onto the same ledger
+• Treasury: the physical cash in the safe, one line per movement with a running
+  balance, reconciled against the notes rather than against another screen
+• Bank accounts, expenses, company assets
+• Monthly profit reporting and an exportable workbook
 
-Stack: Laravel 10, Vue 3, Inertia.js, Jetstream, Vite, Vuex, Tailwind CSS,
-MySQL, AWS S3.
+TWO ROLES, ENFORCED PROPERLY
+Owner and data-entry staff. Staff can enter the day's trade but never see profit,
+expenses, bank balances or the safe. That's enforced in three independent places:
+Postgres row-level security policies (the real protection), a role check at the
+top of every server action, and the navigation (cosmetic only). No email is
+hardcoded anywhere — roles live in the database.
+
+THE RULES LIVE IN THE DATABASE
+This is a money tool, so the constraints are in Postgres where application code
+can't get around them: cash + credit must equal what the meter sold; a meter can
+never run backwards; two readings for one nozzle can't overlap and double-count
+litres; the customer ledger is append-only — a mistake is corrected by posting an
+offsetting entry, never by editing history. Enforced by triggers, not permissions.
+
+WHITE-LABELLED
+Business name and logo are one config file and one image. Change them and the
+sidebar, login screen, browser tabs and monthly workbook all follow — no code
+change. Built to be resold to the next station.
+
+Stack: Next.js 16 (App Router), React 19, Material UI, Tailwind CSS v4,
+Supabase (Postgres + RLS + Auth), Recharts, Vercel.
 ```
-**Skills:** Laravel · Vue.js · PHP · MySQL · Web Application · API Integration
+**Skills:** Next.js · Supabase · PostgreSQL · React · Material UI · Database Design · Web Application
 
 ---
 
-## 2. Automation engine with LLM integration
+## 2. Consulting firm site — AI intake funnel and admin dashboard
 
-**One-liner:** Event-driven trigger-action automation framework with OpenAI and
-Anthropic integrations, agentic tool-calling and MCP servers — powering multiple
-production products.
+**One-liner:** Consulting firm website with a multi-step AI-assisted lead intake
+form and a private admin dashboard for managing enquiries.
+**Live:** https://merdian-consulting.vercel.app
 
 **Long description:**
 ```
-The automation layer several products run on. When something happens in the
-system, the right thing happens next — without a person doing it.
+A consulting firm's public site plus the private tool that runs behind it.
 
-THE ENGINE
-An event-driven trigger-action framework: define what counts as a trigger, define
-what should follow, and the engine handles the sequencing, the retries and the
-failures. This is the piece that replaces "someone remembers to check the
-spreadsheet on Monday".
+The public side is a fast, animated marketing site. The part that earns its keep
+is the intake funnel: a multi-step form that takes contact details, then adapts —
+the follow-up questions change based on which service the visitor picked, so
+nobody is asked twelve irrelevant questions. It ends in a review-and-submit step
+so the lead sees exactly what they're sending.
 
-THE AI LAYER
-Language models wired into real workflows rather than dropped in as a chat box:
-• Integrations against both the OpenAI and Anthropic Claude APIs
-• Agentic workflows — prompt orchestration and tool-calling, so the model can
-  actually do things in the system rather than only describe them
-• Model Context Protocol tools and servers, giving assistants a defined,
-  constrained set of capabilities instead of open-ended access
+Behind a login sits an admin dashboard where the firm works its leads: filter,
+sort, and move each enquiry through its status. Google's Gemini is wired in
+through the Vercel AI SDK to assist on the intake side, with Zod validating
+every payload before it reaches the database.
 
-WHY IT MATTERS FOR YOUR PROJECT
-Most "add AI" requests are really automation requests with a language model
-somewhere in the middle. The value is in the workflow around the model —
-what triggers it, what it's allowed to touch, what happens when it's wrong —
-and that's the part I build.
+Auth is a real auth gate, not a hidden route — an admin authorisation gap and a
+login race condition were both found and fixed during the build, through a
+reviewed pull request.
 
-Stack: PHP/Laravel, Node.js, Python, OpenAI API, Anthropic Claude API, Model
-Context Protocol, Redis, event-driven architecture.
+Stack: Next.js 16, React 19, Supabase (Auth + Postgres), Vercel AI SDK with
+Google Gemini, Zod, GSAP, Tailwind CSS v4, Vercel.
 ```
-**Skills:** AI Integration · Automation · Laravel · Python · Node.js · API Integration
-
-> **Note for Bilal:** this is your strongest card and the least visible on
-> GitHub, because the work sits in private product repos. Write it up carefully
-> and be ready to talk through the architecture on a call — that's what will
-> convert it.
+**Skills:** Next.js · Supabase · AI Integration · React · Web Development · Landing Page
 
 ---
 
-## 3. eBay product data scraper
+## 3. Commerce platform marketing site — 45 pages, production fidelity
 
-**One-liner:** PHP scraper that runs an eBay search, walks every result, and
-extracts full detail for each product.
+**One-liner:** Production-fidelity rebuild of an omnichannel commerce platform's
+marketing site — 45 pages, real design tokens, real typography.
 
 **Long description:**
 ```
-A data extraction tool for eBay: give it a search, and it works through every
-result in the listing and pulls the full detail record for each product rather
-than just what the search page shows.
+A ~45-page marketing site for a cloud commerce platform (POS, ecommerce,
+customer app, warehouse management and ERP in one product), built as a real
+Next.js application from a design-system handoff.
 
-The interesting problems in scraping are never the parsing. They're the pacing
-that keeps you from being blocked, the retry logic for the requests that fail
-anyway, handling listings whose structure isn't quite like the others, and
-resuming a run that died three thousand products in without starting over.
+Routes: home, 5 solution pages, 5 industry pages, and 27 business-type pages
+(POS / ecommerce / app crossed with grocery, clothing, bakery, cafe, barbershop,
+beauty salon, tyre shop, pet services, cleaning services) — all generated from
+structured content rather than hand-built one at a time. Plus blog, contact,
+live demo, about and legal pages.
 
-I build these to run unattended and produce clean, structured output you can
-load straight into a database or spreadsheet.
+The interesting constraint was fidelity. Spacing, colour and type come from the
+design system's own token files and production CSS class names, not from
+approximate Tailwind utilities — so the result matches the source pixel-close
+instead of "close enough". All copy, images and font declarations came through
+the pipeline; nothing was retyped by hand, which is what kept 45 pages accurate.
 
-I also do this for other sources — product catalogs, price monitoring,
-directories, listings. If you can see it in a browser, it can usually be
-collected properly.
+Content and navigation live in two config modules, so the whole site can be
+rebranded by editing one file and swapping two logos.
 
-Stack: PHP, HTTP clients, HTML parsing, structured data export.
+Stack: Next.js 16, React 19, Tailwind CSS v4, CSS design tokens.
 ```
-**Skills:** Web Scraping · PHP · Data Extraction · Automation
+**Skills:** Next.js · React · Web Development · Landing Page · Responsive Design · UI/UX Design
 
 ---
 
-## 4. Laravel setup package
-
-**One-liner:** Reusable Composer package that does a Laravel project's standard
-setup in one command instead of an afternoon.
-
-**Long description:**
-```
-An internal package published to Composer that handles the boilerplate every new
-Laravel project needs — the configuration, the scaffolding and the commands that
-otherwise get copied by hand from the last project and slowly drift out of sync.
-
-It's a small thing, and it's the kind of small thing that says how someone works.
-Doing the same setup by hand twenty times is a choice; noticing and packaging it
-is a different one.
-
-I build this kind of internal tooling for teams: shared packages, project
-scaffolding, and the conventions that stop five developers writing five versions
-of the same helper.
-
-Stack: PHP, Laravel, Composer package development.
-```
-**Skills:** Laravel · PHP · Package Development
-
----
-
-## 5. Hotel management API
-
-**One-liner:** Laravel REST API backing a hotel management system, with a
-separate Vue admin front end.
-
-**Long description:**
-```
-A Laravel REST API for hotel operations, with a Vue.js admin dashboard consuming
-it as a separate application.
-
-Split that way deliberately: the API serves the admin panel today and can serve a
-mobile app or a booking widget tomorrow without being rewritten. When the front
-end and the API are one codebase, the second consumer is always a rewrite.
-
-The dashboard side is built on Vuetify with Vuex for state, drag-and-drop
-ordering, date-range filtering and a component structure meant to be extended.
-
-Stack: Laravel, PHP, MySQL, Vue.js, Vuetify, Vuex, REST API design.
-```
-**Skills:** Laravel · REST API · Vue.js · PHP · MySQL
-
----
-
-## Team projects — mark these as collaborations
-
-Bilal works with two other developers, Owais Khan and Ammar Sagheer, on a
-Next.js + Supabase product line. These are legitimate portfolio items **as long
-as his role is stated**. Fill in his real contribution before publishing — I've
-left the role line explicit rather than guessing at it.
-
----
-
-## 6. Petrol station management system (team project)
-
-**One-liner:** Business management system in daily production use — daily meter
-readings, stock, customer credit ledgers, cash reconciliation and monthly profit.
-
-**Long description:**
-```
-My role: [FILL IN — e.g. "project coordination and delivery management, plus
-work on X"]. Built with two other developers.
-
-A complete operations system for a petrol station, replacing a stack of paper
-registers and one enormous spreadsheet. Staff enter each nozzle's closing meter
-reading; the system computes litres and value at the day's rate, splits the day
-into cash and credit, and tells the owner what cash should be in the drawer
-before it's counted — so a mismatch is caught while it's still fixable.
-
-Covers daily readings, fuel purchases and tank dips, lubricant stock and counter
-sales, per-customer credit ledgers, the physical cash in the safe with a running
-balance, bank accounts, expenses, assets and monthly profit reporting.
-
-Two roles, enforced properly: staff can enter the day's trade but never see
-profit, expenses or bank balances — enforced in Postgres row-level security, in
-a role check on every server action, and in the navigation.
-
-The money rules live in the database, not the form: cash plus credit must equal
-what the meter sold; a meter can never run backwards; two readings for one nozzle
-can't overlap and double-count litres; the customer ledger is append-only, so a
-mistake is corrected by an offsetting entry rather than by editing history.
-
-It also ships as a licensed offline Windows application with its own bundled
-Postgres, for businesses without reliable internet.
-
-Stack: Next.js, React, Supabase (Postgres, Auth, RLS), Material UI, Tailwind,
-Electron.
-```
-**Skills:** Project Management · Web Application · PostgreSQL · Next.js
-**→ Tick "I worked on this with others."**
-
----
-
-## 7. E-commerce AI assistant (team project)
-
-**One-liner:** Storefront chatbot that answers product, price and policy
-questions by generating SQL against the live catalog, with RAG, voice and
-semantic caching.
-
-**Long description:**
-```
-My role: [FILL IN]. Built with two other developers.
-
-A shopper asks a question in plain language — typed or spoken — and gets an
-answer streamed back live.
-
-Product, price and stock questions are answered by an LLM writing a SQL query
-against the real catalog, running it, and summarising the result, with a
-self-healing retry if the query fails. Policy questions are answered from
-retrieved store documents via RAG. Answers worth charting render as charts.
-
-The security model is the point. Letting a model write SQL against a production
-database is dangerous unless it's constrained in layers: the backend connects as
-a Postgres role with SELECT on exactly three tables — orders, addresses,
-profiles and wishlists are unreachable whatever the model generates — and a SQL
-guard rejects anything that isn't a single read-only SELECT before it reaches
-the database at all.
-
-Questions are embedded and matched against past questions by cosine similarity;
-a close match returns the cached answer with no model call at all. Only
-successful answers are cached, so a transient failure never gets stuck as the
-permanent answer. Every request is traced with latency, a per-step breakdown and
-the token cost of each model call.
-
-Stack: Next.js, LangGraph, Google Gemini, Postgres + pgvector, Redis, Langfuse.
-A Python/FastAPI variant of the same pipeline also exists.
-```
-**Skills:** AI Integration · LangChain · Python · PostgreSQL · API Integration
-**→ Tick "I worked on this with others."**
-
----
-
-## 8. Offline desktop business software with licensing (team project)
+## 4. Offline Windows business software with bundled database
 
 **One-liner:** Next.js business applications packaged as installable Windows
-programs with bundled Postgres, sold under a signed offline licence.
+programs with their own bundled Postgres — no internet, no cloud account.
 
 **Long description:**
 ```
-My role: [FILL IN]. Built with two other developers.
+Two products shipped this way: a petrol station system, and a committee manager
+for running a rotating savings group.
 
-Two products shipped this way: the petrol station system, and a committee
-manager for running a rotating savings group.
+A web app needs internet, a server and a monthly bill. Plenty of businesses have
+unreliable internet, some won't put their books in the cloud, and some just want
+a program that opens from the desktop.
 
-Web apps need internet, a server and a monthly bill. These install from an .exe,
-keep their books in a Postgres database bundled inside the application, and never
-need a connection.
+The hard part isn't the window — it's the data. A web app talks to a database on
+a server that won't exist any more. So a real Postgres database is bundled inside
+the application itself: same queries, same schema, no cloud account, no Docker,
+nothing for the user to install or configure. They run the installer and it works.
 
-Selling software that runs entirely offline means you can't check a server before
-letting someone in, so licences are signed tokens verified locally with Ed25519.
-Each has an activation window and a support date; past that date the app soft-
-restricts — new entries refused, every existing record still readable and
-exportable, because a client who stops paying should never lose access to their
-own books. When a machine does have internet, the app checks a published blocked-
-key list on its existing update schedule.
+Everything from the web version comes across: nozzle readings and their overlap
+rules, the lubricant shelf and its reports, loose-oil handling with its own
+export split, customer removal and purging, the activity log, and a multi-sheet
+Excel export.
 
-Stack: Next.js, React, embedded Postgres, Electron, electron-builder,
-Ed25519 signing.
+Because the software is sold rather than hosted, it also carries a licensing
+layer: signed licence tokens verified locally with no internet, an activation
+window, and a soft restriction after the support date that refuses new entries
+while leaving every existing record readable and exportable — a client who stops
+paying should never lose access to their own books.
+
+Stack: Next.js, React, embedded Postgres, Electron, electron-builder.
 ```
-**Skills:** Electron · Desktop Application · PostgreSQL · Software Licensing
-**→ Tick "I worked on this with others."**
+**Skills:** Electron · Next.js · PostgreSQL · Desktop Application · Node.js
 
 ---
 
-## Also worth a mention in the overview, not as cards
+## 5. Committee Manager — offline app for a rotating savings group
 
-- **API gateway** work (`bill-api-gatway`)
-- **Vue.js admin dashboards** — Vuetify, Vuex, drag-and-drop, date filtering
-- **CodeIgniter** legacy work — useful, since a real slice of Upwork PHP jobs are
-  maintaining CodeIgniter apps nobody wants to touch. Low competition.
+**One-liner:** Windows app for running a monthly committee (ROSCA):
+contributions, payouts, flexible repayments, and a solvency forecast that says
+what's actually affordable.
+
+**Long description:**
+```
+A committee is a rotating savings pot: ten people each pay in monthly, and each
+month one of them takes the pot and repays it over the following months on top
+of his ordinary contribution.
+
+THE PROBLEM THE APP EXISTS FOR
+With ten members the turn comes round every ten months, but a withdrawal is
+repaid over fifteen. So full-size payouts go out while the repayment stream
+behind them is still building — and the gap is invisible from the bank balance.
+On the real numbers, an account holding Rs 520,000 looks comfortable right up to
+the month it empties. The app simulates the whole schedule month by month and
+binary-searches for the largest payout that never breaches the safety cushion —
+then, when the answer is no, sizes the three ways out: pay less, repay faster,
+or everyone contributes more. It distinguishes "you cannot afford this" from
+"you cannot afford this yet", because they have different answers.
+
+THE BOOKS CANNOT DRIFT
+The rules are triggers, constraints and functions in Postgres, not form
+validation. The ledger is append-only — a mistake is corrected by writing the
+opposite entry, and both stay visible. A withdrawal larger than the account holds
+is refused outright with no override. One that breaches the cushion is refused
+too, but that's policy rather than physics, so it goes through if the manager
+types a reason — and the reason is kept forever and reprinted on the month's
+summary for the other nine to read.
+
+Members' stakes always add up to exactly the money in the account, because the
+stake isn't stored anywhere — it's one sum read two ways. A verification script
+asserts that identity after every operation.
+
+Stack: Next.js, React, embedded Postgres, Electron, iron-session, Recharts.
+```
+**Skills:** Electron · PostgreSQL · Next.js · Desktop Application · Database Design
+
+---
+
+## 6. E-commerce AI assistant — natural-language search over a live catalog
+
+**One-liner:** Storefront chatbot that answers product, price and policy
+questions by generating SQL against the real catalog, with RAG, voice and a
+semantic cache.
+
+**Long description:**
+```
+A shopper asks a question in plain language — typed or spoken — and gets a real
+answer streamed back token by token, not a wait-then-dump.
+
+HOW IT ANSWERS
+• Product, price and stock questions: an LLM writes a SQL query against the
+  actual product catalog, runs it, and summarises the result. If the query
+  fails, it self-heals and retries once.
+• Policy questions (shipping, returns, payment): answered from retrieved store
+  documents via RAG, not from the database.
+• Answers worth charting (comparisons, trends) render as an inline chart.
+• It can speak the answer back through the same streaming pipeline.
+
+THE SECURITY MODEL, WHICH IS THE POINT
+Letting a language model write SQL against a production database is a genuinely
+dangerous idea unless you constrain it properly, in layers:
+• The backend connects as a dedicated Postgres role with SELECT granted on
+  exactly three tables — products, categories, product_images. Orders,
+  addresses, contacts, profiles and wishlists are unreachable no matter what
+  SQL the model produces.
+• A SQL guard rejects anything that isn't a single read-only SELECT against the
+  allowed tables, before it reaches the database at all.
+• The endpoint requires a shared-secret API key and CORS is origin-restricted.
+
+PERFORMANCE
+Questions are embedded and compared against past questions by cosine similarity;
+a match at 0.87 or above returns the cached answer with no SQL generation, no
+database round-trip and no summarisation call. Only genuinely successful answers
+are cached — a failed self-heal never gets stuck as the permanent answer.
+
+Every request is traced: latency, a per-step breakdown, and the token count and
+estimated cost of each model call.
+
+Stack: Next.js, LangGraph, Google Gemini (generation, embeddings, transcription,
+text-to-speech), Postgres + pgvector via Supabase, Redis, Langfuse.
+```
+**Skills:** AI Integration · LangChain · Next.js · PostgreSQL · API Integration · Chatbot Development
+
+---
+
+## 7. The Ledger — Android app for offline ledger entry
+
+**One-liner:** React Native / Expo Android app that records daily business
+entries offline on a local SQLite database and prints or shares PDF reports.
+
+**Long description:**
+```
+The mobile companion to the station system, for a phone in a hand at the pump.
+
+Built on Expo with expo-router. The whole thing works with no internet: entries
+are written to a local SQLite database on the device, so a dropped connection
+never costs a day's data. Reports are generated on-device and can be printed or
+shared straight out as PDFs.
+
+Ships as a real installable Android APK through EAS Build — not a web page in a
+wrapper. Includes verification scripts that check the SQL and every screen before
+a build goes out, plus a scripted screenshot pass.
+
+Stack: React Native, Expo (expo-router, expo-sqlite, expo-print, expo-sharing),
+EAS Build.
+```
+**Skills:** React Native · Mobile App Development · SQLite · JavaScript
+
+---
+
+## 8. PSX RSI Dashboard — stock screener as a Windows desktop app
+
+**One-liner:** Swing-trading dashboard for the Pakistan Stock Exchange —
+RSI across ~750 equities, packaged as an installable Windows application.
+
+**Long description:**
+```
+A screener for a specific trading strategy: find oversold stocks, hold one to
+two weeks, sell. Not a general-purpose charting tool.
+
+It computes RSI for every listed PSX equity at a selectable look-back period
+(14 / 5 / 2, each with its own oversold and overbought thresholds) and chart
+interval, matching TradingView's own RSI to within normal vendor-data noise.
+
+The engineering problem was load. Firing ~750 requests at PSX's feed at once
+isn't viable, so it loads the KSE-100 index stocks first — the ~100 companies
+that actually matter appear fast — with everything else behind a "Load more".
+Illiquid stocks are filtered out by a volume floor. Refresh re-prices what's
+loaded and recomputes RSI without re-crawling all history.
+
+Also has a buy-signal screener on a fixed rule, per-row insight that reads
+whatever period and interval you're currently viewing, a starred watchlist
+persisted locally, and a market-breadth summary.
+
+Packaged with Electron and electron-builder into a Windows installer that runs
+as a normal desktop program.
+
+Stack: Next.js 16, React 19, Recharts, Electron, electron-builder, Tailwind v4.
+```
+**Skills:** Electron · Next.js · React · Data Visualization · Desktop Application · API Integration
+
+---
+
+## 9. Fast Pizza Co. — React ordering app with cart and order tracking
+
+**One-liner:** Restaurant ordering app: menu, cart, address capture, order
+placement and live order lookup, with Redux Toolkit state and currency handling.
+
+**Long description:**
+```
+A complete food-ordering flow built in React with Vite.
+
+Browse the menu, build a cart, enter delivery details, place the order, then
+look the order up again by ID to track it. State runs through Redux Toolkit with
+separate slices for cart, user and currency — including live currency conversion,
+which is the kind of thing that looks trivial until prices start disagreeing with
+each other across screens.
+
+Routing and data loading use React Router's loader/action model, so data is
+fetched at the route level rather than in effects scattered through components.
+Supabase is wired in for persistence.
+
+Stack: React 19, Vite, Redux Toolkit, React Router 7, Tailwind CSS v4, Supabase.
+```
+**Skills:** React · Redux · JavaScript · Tailwind CSS · Web Development
+
+---
+
+## Also worth mentioning in the overview, not as cards
+
+- **Cabin booking site** — date-range availability picker, guest accounts,
+  reservation management. Next.js 16 + Supabase + NextAuth v5.
+  Live: `the-wild-oasis-thechamps.vercel.app`
+- **Coffee roaster site** — built to a design handoff in TypeScript.
+  Live: `coffee-shop-2-nu.vercel.app`
+- **Commerce console** — POS checkout, inventory and order-management screens
+  against a 22-component design system. Live: `services-thechamps.vercel.app`
+- **Site audit tool** — Playwright script that crawls a site and reports
+  problems. Evidence of automating your own QA.
+
+## Before publishing — read this
+
+Every project above is real and shipped, but a client on a call will ask
+follow-up questions about any card you put up. Pick the items you can talk
+through in detail — architecture, why a decision was made, what went wrong —
+and leave off any you can't. A portfolio you can defend at six items beats nine
+you can't. Items 1, 2 and 3 are the highest-value ones to be fluent on.

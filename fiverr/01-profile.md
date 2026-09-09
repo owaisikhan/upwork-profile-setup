@@ -11,64 +11,65 @@ so the algorithm has data on you.
 
 | Field | Value |
 |---|---|
-| **Username** | `bilaldev`, `bilalbuilds`, `bilal_laravel` — short, no trailing numbers. **Cannot be changed later.** |
+| **Username** | `bilaldev`, `bilalbuilds`, `bilal_codes` — short, no trailing numbers. **Cannot be changed later.** |
 | **Display name** | Bilal Sagheer |
 | **Photo** | Same as Upwork. Fiverr shows it small next to every gig — a clear face beats anything clever. |
 | **Language** | English — Fluent or Conversational (honestly). Urdu — Native. |
-| **Country** | Pakistan. Don't hide it; it gets caught at withdrawal anyway. |
+| **Country** | Pakistan. Don't hide it; it's caught at withdrawal anyway. |
 
 ## Professional tagline
 
 ```
-Laravel and Vue developer — web apps, APIs, automation and AI integration
+I build business software in Next.js — dashboards, web apps and desktop tools
 ```
 
 ## Occupation
 
-**Programming & Tech → Web Development**, from [his real start year — 8+ years
-back]. Skills: Laravel, PHP, Vue.js, MySQL, Node.js, Python, REST API,
-Web Scraping, AI Integration.
+**Programming & Tech → Web Development**, from [his real start year]. Skills:
+Next.js, React, Supabase, PostgreSQL, JavaScript, Node.js, Electron, React Native.
 
 ## Skills (set levels honestly)
 
 | Skill | Level |
 |---|---|
-| Laravel | Expert |
-| PHP | Expert |
-| Vue.js | Expert |
-| MySQL | Expert |
+| Next.js | Expert |
+| React | Expert |
+| Supabase | Expert |
 | JavaScript | Expert |
-| REST API | Expert |
-| Web Scraping | Intermediate |
+| Tailwind CSS | Expert |
+| PostgreSQL | Intermediate |
+| TypeScript | Intermediate |
+| Electron | Intermediate |
+| React Native / Expo | Intermediate |
 | Node.js | Intermediate |
-| Python | Intermediate |
-| Docker | Intermediate |
 
 Don't mark everything Expert. Being calibrated costs nothing and reads as adult.
 
 ---
 
-## Profile description (600 char cap — this is 592)
+## Profile description (600 char cap — this is 588)
 
 ```
-Laravel and Vue developer with 8+ years shipping production web applications —
-admin panels with real roles and permissions, REST and GraphQL APIs, and the
-integrations that connect them to everything else.
+I build the software small businesses actually run on — admin dashboards,
+internal tools and web apps in Next.js and Supabase.
 
-I also build the automation behind products: event-driven trigger-action
-engines, LLM integrations on the OpenAI and Anthropic APIs, agentic workflows
-with tool-calling, and MCP servers.
+A recent project is a management system a fuel business uses every day: daily
+readings, stock, customer credit, cash reconciliation and monthly profit, with
+two user roles and the money rules enforced in the database itself rather than
+in the form. It also ships as an offline Windows app with its own bundled
+Postgres.
 
-I work as an Associate Project Manager too, so I scope honestly and say early
-when something will cause a problem later. You get the deployed app, the code,
-and documentation.
+I also build marketing sites, Figma-to-code, e-commerce fronts and AI
+assistants. You get the deployed app, the code, and a README your next
+developer can follow.
 ```
 
-## Linked accounts
+## ⚠️ Don't link GitHub yet
 
-Link **GitHub** (`bilalsagheer13`). His profile README already names the
-automation and AI work explicitly, which backs up the description. Do the repo
-cleanup in `../upwork/05-launch-plan.md` first.
+`github.com/bilal-sagheer` has nothing public in it. A linked GitHub that opens
+on an empty page is worse than no link — and on Fiverr, where buyers are already
+suspicious of new sellers, it actively costs you orders. Leave it blank until
+there's something there, and use live deployed URLs in the gig galleries instead.
 
 ---
 
@@ -77,25 +78,9 @@ cleanup in `../upwork/05-launch-plan.md` first.
 1. **Gig images.** More than half the decision. Buyers scan thumbnails and
    prices, and read the description only if the thumbnail earns it.
 2. **The first 3 reviews.** A zero-review gig converts terribly however good it
-   is. Everything in `03-launch-plan.md` is aimed at getting past that.
+   is. The launch plan is aimed entirely at getting past that.
 3. **Response time.** Fiverr publishes it and weights it in search. Install the
    app, reply within an hour. Free ranking that most sellers throw away.
-
----
-
-## Delivering with the team
-
-Owais and Ammar can work on Fiverr orders — Fiverr sellers can and do use teams.
-Two rules:
-
-- **Bilal is the seller and stays the point of contact.** Never let someone else
-  answer messages as him. That's an account-closure offence on every platform.
-- **Don't misrepresent who does the work** if a buyer asks directly. "I work with
-  two other developers on larger builds" is a normal, fine answer.
-
-Gigs 1–5 below are squarely Bilal's own stack, so this mostly doesn't arise.
-Gig 6 (React/Next.js) is where the team does the delivery — price and schedule it
-accordingly.
 
 ---
 
@@ -108,9 +93,21 @@ accordingly.
 | Platform fee | 10% | **20%** |
 | Effort | Daily grind | Front-loaded, then passive |
 | Best for | Larger custom projects | Defined, repeatable packages |
+| Time to first order | 2–5 weeks of daily proposals | 1–6 weeks, mostly waiting |
 
 **Price Fiverr higher.** The fee is double: a $100 gig nets $80 against $90 on
 Upwork. Every price in `02-gigs.md` accounts for this — don't discount them back.
 
 Fiverr costs nothing to leave standing. Set it up once properly and let it work
 while you're sending Upwork proposals.
+
+---
+
+## Delivering larger builds
+
+Fiverr sellers can and do use help on bigger orders. Two rules:
+
+- **You are the seller and stay the point of contact.** Never let someone else
+  answer messages as you — that's an account-closure offence on every platform.
+- **Don't misrepresent who does the work** if a buyer asks directly. "I work
+  with other developers on larger builds" is a normal, fine answer.

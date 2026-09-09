@@ -1,143 +1,131 @@
 # Upwork profile — Bilal Sagheer
 
-Built from `github.com/bilalsagheer13`, the shared team repos, and Bilal's own
-stated background: 8+ years shipping production web apps, Associate Project
-Manager, automation architect, LLM/MCP integrations.
-
 ---
 
 ## Profile title (max 70 chars)
 
 **Primary:**
 ```
-Laravel & Vue Developer | Automation, APIs & AI Integration
+Next.js & Supabase Developer | Business Dashboards & Web Apps
 ```
-58 chars. Laravel is the searched term and where his depth is; automation and AI
-are the differentiators that lift him out of the commodity Laravel pool.
+60 chars. "Business Dashboards" filters out the $5 landing-page crowd and points
+at the higher-value work.
 
 **Alternatives to test later:**
 ```
-Senior Full-Stack Developer | Laravel, Vue, Node & AI Automation
-Laravel Developer & Project Manager | SaaS, APIs, Automation
-Full-Stack Developer | Laravel, Vue, LLM Integration & Web Scraping
+Next.js Developer | Supabase, Postgres & Admin Dashboards
+Full-Stack Next.js Developer | Web, Mobile (Expo) & Desktop Apps
 ```
-
----
 
 ## Hourly rate
 
-**$25/hr.**
+**$15/hr**, with a documented ladder to $35 in `05-launch-plan.md`.
 
-> This is deliberately higher than the $15 we set earlier. That figure was
-> chosen for a developer with ~2 years of visible history. Bilal has **8+ years,
-> production SaaS work, and project-management experience** — at $15/hr a
-> serious client reads that as "something is wrong here" and skips him. $25 is
-> still under market for a senior Laravel developer and gets responses.
-> Ladder in `05-launch-plan.md`. If he wants to open lower to buy the first
-> reviews faster, $20 is the floor I'd go to — not $15.
+Set the profile rate at $15, but never quote $15 in a proposal for a defined
+project — quote **fixed price**, worked back from ~$18–20/hr effective. The
+profile rate gets you found; the fixed-price bid is what you actually earn.
 
 ## Availability
 
-**More than 30 hrs/week** if he's doing this full-time as the team's client-side
-lead. Set it honestly — Upwork weights it and clients filter on it.
+**Less than 30 hrs/week.** The profile and proposals are aimed at fixed-price
+project work rather than hourly retainers.
 
 ---
 
 ## Profile overview
 
+First two lines are all that show before "more" — they do the work.
+
 ```
-I build production web applications and the automation that runs behind them —
-Laravel and Vue on the application side, event-driven automation and LLM
-integration on the systems side.
+I build the boring, load-bearing software small businesses actually run on:
+admin dashboards, internal tools, and customer-facing sites in Next.js and Supabase.
 
-Eight years of shipping real software, not demos. Most recently I've been
-leading an automation module that powers multiple products: an event-driven
-trigger-action engine, LLM integrations against the OpenAI and Anthropic APIs,
-Model Context Protocol tools and servers, and agentic workflows with prompt
-orchestration and tool-calling.
+Most of my work is systems where the numbers have to be right. A recent project
+is a petrol station management system in daily production use — daily meter
+readings, fuel and lubricant stock, customer credit ledgers, cash reconciliation
+against the safe, bank accounts, and monthly profit reports. Two user roles
+(owner and data-entry staff), with permissions enforced in three independent
+places, including Postgres row-level security. The money rules — cash plus credit
+must equal what the meter sold, a meter can never run backwards, the customer
+ledger is append-only — live in the database as constraints and triggers, not in
+UI validation that a bad request can walk around.
 
-I also work as an Associate Project Manager, which in practice means I scope the
-work honestly before it starts, tell you what something will actually cost, and
-say so early when a requirement is going to cause a problem later.
+That's the standard I bring to smaller work too.
 
 WHAT I BUILD
-• Laravel applications and APIs — multi-role admin panels, permissions systems,
-  REST and GraphQL APIs, third-party integrations
-• Vue and Inertia SPAs — full single-page applications on a Laravel backend,
-  including admin panels with roles and permissions built from scratch
-• Automation systems — event-driven trigger/action engines that replace the
-  manual steps between your tools
-• AI and LLM integration — assistants, agentic workflows, tool-calling, MCP
-  servers, wired into real products rather than bolted on
-• Web scraping and data extraction — product, pricing and listing data at scale,
-  handled properly
-• Reusable packages and internal tooling that cut your team's setup time
+• Admin dashboards and internal tools — roles and permissions, data entry that
+  can't silently corrupt itself, filters, exports, printable reports
+• Business web apps on Next.js (App Router) + Supabase — auth, RLS, server
+  actions, Postgres schema design and migrations
+• Marketing sites and landing pages that are fast and actually convert —
+  consulting sites, e-commerce fronts, multi-step lead-capture forms
+• Pixel-accurate builds from Figma or an existing site — including a ~45-page
+  commerce platform marketing site rebuilt to production fidelity
+• Mobile apps with React Native / Expo, and offline Windows desktop apps with
+  Electron running on their own bundled database
+• AI features wired into real products — assistants that answer from your own
+  database and documents, with the security constraints that makes necessary
 
 STACK
-PHP, Laravel, CodeIgniter, Node.js, Python · Vue 3, Inertia, React, Next.js,
-TypeScript · MySQL, MongoDB, Redis · GraphQL, REST · Docker, AWS, DigitalOcean,
-Linux · Tailwind CSS, Vite · OpenAI and Anthropic APIs, MCP
+Next.js 16 (App Router), React 19, JavaScript/TypeScript, Tailwind CSS v4,
+Material UI, shadcn/Radix, Supabase (Postgres, Auth, RLS), Server Actions,
+Redux Toolkit, React Router, Recharts, GSAP/Motion, Expo + SQLite, Electron +
+embedded Postgres, Playwright, Vercel.
 
 HOW I WORK
-I scope before I build. I tell you what a thing will cost in time, not just
-money. You get the deployed application, the repository, and documentation your
-next developer can actually follow.
+I ask what the thing is actually for before I write code. I keep the schema
+honest so the app can't be talked into storing something wrong. I deploy it,
+hand you the repo, and write a README your next developer can follow.
 
-I also work with two other developers, so if a project needs more capacity —
-or a Next.js and Supabase front end alongside a Laravel backend — we can take it
-on as a team.
-
-Send me what you're trying to build and I'll tell you straight whether I'm the
-right fit, including when I'm not.
+Available for fixed-price projects. Send me what you're trying to build and I'll
+tell you straight whether I'm the right fit — including when I'm not.
 ```
 
 ---
 
 ## Skills to select (in this order)
 
-Laravel · PHP · Vue.js · MySQL · JavaScript · API Integration · REST API ·
-Web Application · Node.js · Python · Web Scraping · AI Integration ·
-Database Design · GraphQL · Docker
-
-Note the order: Upwork weights the first few. Laravel and PHP first, because
-that's where the search volume and his depth both are.
-
----
+Next.js · React · Supabase · PostgreSQL · JavaScript · TypeScript ·
+Tailwind CSS · Web Application · Web Development · API Integration ·
+React Native · Electron · Responsive Design · Database Design · Node.js
 
 ## Employment history
 
+Upwork accepts self-employment. One entry:
+
 ```
-Title:    Full Stack Developer & Associate Project Manager
-Period:   [fill in real dates — he has 8+ years, use them]
+Title:    Freelance Web Developer (Self-employed)
+Period:   [his real start year] – Present
 ```
 ```
-I build and lead delivery on production web applications — Laravel and Vue on
-the application side, event-driven automation and LLM integration on the systems
-side. I currently lead an automation module powering multiple products: a
-trigger-action engine, OpenAI and Anthropic API integrations, MCP tools and
-servers, and agentic tool-calling workflows. As Associate Project Manager I
-scope work, manage delivery timelines, and coordinate developers.
+I build web applications and business software for small companies — Next.js and
+Supabase on the front, Postgres on the back. Recent work includes a petrol
+station management system in daily production use, a consulting firm's website
+with an AI-assisted intake funnel and admin dashboard, and an Android app for
+offline ledger entry. I handle the whole job: schema, app, deployment, and the
+documentation that lets someone else pick it up.
 ```
 
-Add earlier roles too. **Eight years of employment history is his single biggest
-advantage over every other new Upwork profile** — do not leave this section thin.
+## Education
 
-## Education & certifications
-
-Fill in whatever is real. With 8 years of work history this matters less, but it
-costs nothing.
+Whatever is real. No formal CS degree doesn't hurt on Upwork; leave it blank
+rather than padding it.
 
 ## Languages
 
-English — Fluent or Conversational (be honest). Urdu — Native.
+English — Fluent or Conversational (honestly). Urdu — Native. Don't claim Native
+English; it's noticed and reads as padding.
 
 ## Profile photo
 
-Face, shoulders up, plain background, natural light. He's presenting as the
-senior/client-facing person on the team, so this matters more for him than for a
-developer who stays behind the scenes.
+Face, shoulders up, plain background, natural light, no sunglasses, not a
+cropped group photo. This measurably affects invite rate.
 
-## Portfolio link
+## ⚠️ Do NOT link GitHub
 
-Link GitHub (`github.com/bilalsagheer13`). His profile README is already strong —
-it names the automation and AI work explicitly, which backs up the overview.
+`github.com/bilal-sagheer` currently has nothing public in it. A linked GitHub
+with no visible work is worse than no link at all — it invites a click that ends
+in an empty page. Leave the field blank until there's something there.
+
+Better: put a **live URL** in the portfolio items instead. Deployed sites do the
+same job and don't expose commit history.
