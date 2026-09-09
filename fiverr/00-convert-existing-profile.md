@@ -1,123 +1,108 @@
-# Converting the existing Fiverr account to the dev stack
+# Converting `@bilaledits__` to the dev stack
 
 The account is live: **`@bilaledits__`**, "Cinematic Video Editor for Ads Reels
-and Brand Content", 11/12 profile strength, video portfolio, Pakistan,
-English + Urdu.
+and Brand Content", 11/12 profile strength, four video/fashion portfolio items,
+Pakistan, English + Urdu. **No gigs**, so no orders and no reviews.
 
-Everything below is in the order to do it. Read the username section first —
-it's the one decision that can't be undone later.
-
----
-
-## 1. Start a clean account — the decision is made
-
-**The account has no gigs, so it has no orders and no reviews.** There is
-nothing on it worth protecting.
-
-That resolves the one question that mattered. **Fiverr never lets you change a
-username** — so `fiverr.com/bilaledits__` would be the permanent address of a
-Next.js developer's profile, on every gig URL and every link sent to a client,
-with "edits" signalling the wrong category forever. You'd be carrying that for
-years to save an afternoon.
-
-Since the only things on the account are a photo, a description and four
-portfolio images — all of which are being replaced anyway — the trade is easy.
-Start clean and get the handle right.
-
-### Do it in this order. The order is the whole point.
-
-1. **Contact Fiverr Customer Support** and ask them to permanently delete
-   `@bilaledits__`. Help → Contact Support → Account → request deletion. Say
-   you're closing the account; you don't need to explain why.
-2. **Wait for written confirmation** that it's deleted. This usually takes a few
-   days. Don't skip ahead.
-3. **Create the new account** with a fresh email address. A deleted account's
-   email often can't be reused, so have a second one ready.
-4. Re-do ID verification and connect Payoneer.
-
-**Do not create the new account while the old one is live.** Fiverr allows one
-seller account per person. Two active accounts gets both permanently banned, and
-appeals almost never succeed. The wait is the price of doing this safely.
-
-### Username
-
-Pick from: `bilaldev`, `bilalbuilds`, `bilal_codes`, `bilalwebdev`,
-`buildwithbilal`. Short, no trailing numbers, no trailing underscores, no year.
-
-**This is permanent.** Spend ten minutes on it, not ten seconds. Say it out loud
-as if reading it to a client on a call.
-
-### What carries over
-
-Nothing automatically, but nothing valuable is lost either:
-
-| | Status |
-|---|---|
-| Reviews, orders, seller level | None exist |
-| Profile photo | Reuse it — it's good |
-| ID verification | Re-do, ~1 day |
-| Payoneer | Reconnect |
-| Account age | Lost, worth very little with no order history |
-| Username | **Fixed permanently — the whole reason for doing this** |
-
-### While you wait for the deletion
-
-Don't sit idle. Do the parts that aren't account-bound:
-- Take the portfolio screenshots (section 5)
-- Write and record the intro video (section 7)
-- Design the gig images (`03-launch-plan.md`)
-- Set up the **Upwork** profile — that's independent and can go live today
+**Decision: keep this account and convert it in place.** Reasoning below, then
+the steps in order.
 
 ---
 
-## 2. Set up the new account
+## 1. Why keep it
 
-Nothing to delete — it's a fresh account. Fill these in from scratch:
+Fiverr never lets you change a username, so `fiverr.com/bilaledits__` is
+permanent. That's a real cost. It's outweighed by what keeping it saves:
 
-- [ ] **Display name** → Bilal Sagheer
+- **You launch this week, not next.** Deleting an account means contacting
+  support, waiting days for written confirmation, then signing up with a fresh
+  email and re-verifying. That's a week of nothing.
+- **ID verification and Payoneer are already done.**
+- **The photo is already good** — face, plain background, professional.
+- **11/12 profile strength** is already banked.
+
+And the mismatch matters less than it looks: **Fiverr search results show your
+display name and photo, not your username.** Buyers see "Bilal Sagheer" and a
+face. The handle appears in the profile URL and on the profile page, which is
+small text most people never read.
+
+### One rule about the handle
+
+**Never explain it.** Don't write "I'm a code editor too", don't reference video
+editing, don't hang a lampshade on it anywhere in the description, a gig, or a
+message to a buyer. A developer's profile that stops to justify its own username
+reads as someone unsure of what they do. Left alone, it's just a handle.
+
+If it ever genuinely becomes a problem — a buyer raises it, or it's costing
+conversions — the delete-and-restart route is still there. It just isn't worth
+spending a week on now, before there's a single order to protect.
+
+---
+
+## 2. Strip the video profile
+
+Do all of this in one sitting, so the profile is never half one thing and half
+the other.
+
+- [ ] **Portfolio items** — delete all four (the Marvel tee, the garment shots,
+      the fashion photos). There's no version of the new positioning where
+      fashion photography helps.
+- [ ] **Skills** — remove Premiere Pro, After Effects, video editing, colour
+      grading, motion graphics, and everything else from that world. All of it.
+      A profile listing both reads as someone who does neither.
+- [ ] **Occupation** — change from Video & Animation to **Programming & Tech →
+      Web Development**, with his real start year in development.
+- [ ] **Any intro video** currently showing editing work.
+
+Nothing to do about gigs — there are none. That's the one piece of luck here:
+no reviews to protect, so no awkward pause-vs-delete decision.
+
+## 3. Rewrite the profile
+
 - [ ] **Tagline** → `I build business software in Next.js — dashboards, web apps and desktop tools`
 - [ ] **Description** → the 588-character version in `01-profile.md`
-- [ ] **Occupation** → Programming & Tech → Web Development, with his real start
-      year in development. **Not** Video & Animation.
 - [ ] **Skills** → Next.js, React, Supabase, JavaScript, Tailwind CSS,
       PostgreSQL, TypeScript, Electron, React Native, Node.js — levels as set in
-      `01-profile.md`. No video skills at all.
-- [ ] **Photo** → reuse the existing one. Face, plain background, professional.
-- [ ] **Languages** → English, Urdu
-- [ ] **Education / certifications** → anything real on the development side
+      `01-profile.md`
+- [ ] **Photo** → keep the current one, it's fine
+- [ ] **Languages** → keep as-is (English, Urdu)
+- [ ] **Display name** → already "Bilal Sagheer", leave it. This is what buyers
+      actually see in search, and it's doing the work the username can't.
+- [ ] **Education / certifications** → add anything real on the development side
 
-## 3. Build the portfolio
+## 4. Rebuild the portfolio
 
-Add the development projects with real screenshots. Source material and full
-descriptions are in `../upwork/02-portfolio.md` — the same projects work here,
-just shorter.
+Add the development projects with real screenshots. Full descriptions are in
+`../upwork/02-portfolio.md` — same projects, shorter copy here.
 
 Priority order for Fiverr, which rewards visual proof over technical depth:
-1. Petrol station dashboard (most visually impressive, most distinctive)
-2. Consulting site (has a live URL buyers can click)
-3. Commerce marketing site (shows range and volume)
-4. Desktop app (unusual, memorable)
+1. **Petrol station dashboard** — most visually impressive and most distinctive
+2. **Consulting site** — has a live URL buyers can click
+3. **Commerce marketing site** — shows range and volume
+4. **Desktop app** — unusual, memorable
 
 1440px screenshots, real content, customer names and balances blurred.
 
-## 4. Build the gigs
+## 5. Build the gigs
 
 From `02-gigs.md`. Publish **1, 3 and 5 first** — landing page, Figma-to-code,
-bug fixing. Not all seven.
+bug fixing. Not all seven: new gigs get a temporary rotation boost in search, and
+firing all seven at once spreads it across gigs he can't service at under 30
+hrs/week.
 
-Gig images are more than half the decision; specs are in `03-launch-plan.md`.
+Gig images are more than half the buying decision. Specs in `03-launch-plan.md`.
 
-## 5. The intro video
+## 6. The intro video — the 12th profile-strength point
 
-On the old account this was the last profile-strength point, and it'll be the
-same on the new one. Do it, and make it a **development** video: 30–60 seconds, your voice, screen recording of a real
+Fiverr is showing 11/12 with "Create an Intro Video" as the gap. Do it, and make
+it a **development** video: 30–60 seconds, his voice, screen recording of a real
 project — click through the dashboard, show the roles working, show the site
 loading fast.
 
-Here's the useful part: **video editing is a skill you already have.** It just
-isn't the thing you're selling any more. Most developers' intro videos are bad
-because they can't edit. Yours doesn't have to be. Use the skill, don't advertise
-it.
+Here's the useful part: **video editing is a skill he already has.** It just
+isn't the thing he's selling any more. Most developers' intro videos are bad
+because they can't edit. His doesn't have to be. Use the skill, don't advertise
+it — and don't show any of the old client footage.
 
 Script shape:
 ```
@@ -140,19 +125,24 @@ right fit. Thanks for watching.
 
 ## What to expect
 
-- **First order: 1–6 weeks**, mostly waiting rather than working. A brand-new
-  seller with no reviews converts badly no matter how good the gigs are; the
-  $35 bug-fixing gig exists specifically to break that deadlock.
-- **New gigs get a temporary search boost.** Publish 1, 3 and 5 to use it, not
-  all seven at once.
-- **Answer Fiverr Briefs daily.** New sellers get seen there in a way they don't
-  in search.
+- **Search relevance resets.** Fiverr's algorithm has learned this is a
+  video-editing account. Ranking it for "Next.js developer" starts close to
+  scratch and takes weeks of impressions and clicks in the new category to
+  rebuild. Unavoidable, and not a sign anything was done wrong.
+- **First order: 2–6 weeks.** The $35 bug-fixing gig exists specifically to break
+  the zero-review deadlock — it's an impulse purchase for someone whose site is
+  down at 2am, and a 5-star from $35 counts the same as one from $500.
+- **Answer Fiverr Briefs daily** in the meantime. A repositioned seller gets seen
+  there in a way they don't in search.
+- **Upwork is independent and can go live today.** Don't wait on Fiverr momentum
+  to start sending proposals.
 
 ## Don't
 
-- Don't create the new account before the old one is confirmed deleted.
-- Don't list video skills or video gigs "just in case". A profile that does both
-  reads as someone who does neither, and it confuses the algorithm about which
-  category to rank you in. Commit to one.
-- Don't mention the video-editing past anywhere on the profile.
-- Don't rush the username. It's the one thing you can't fix later.
+- Don't explain or reference the username anywhere.
+- Don't keep video skills or add a video gig "just in case". A profile that does
+  both reads as someone who does neither, and it confuses the algorithm about
+  which category to rank in. Commit to one.
+- Don't mention the video-editing past on the profile at all.
+- Don't create a second Fiverr account. One seller account per person — two
+  active gets both banned, and appeals rarely succeed.

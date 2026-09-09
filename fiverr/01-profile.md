@@ -8,20 +8,20 @@ so the algorithm has data on you.
 ---
 
 > **Read [`00-convert-existing-profile.md`](00-convert-existing-profile.md)
-> first.** The existing account (`@bilaledits__`) has no gigs, orders or
-> reviews, so the plan is to have Fiverr delete it and start clean with a proper
-> username — Fiverr never lets you change one. That file has the order of
-> operations; this file is what the new profile contains.
+> first.** This is an existing account (`@bilaledits__`, currently a
+> video-editing profile) being converted in place — the username stays, the rest
+> is replaced. That file covers what to strip and in what order; this file is
+> what the profile becomes.
 
 ## Account basics
 
 | Field | Value |
 |---|---|
-| **Username** | `bilaldev` / `bilalbuilds` / `bilal_codes` / `buildwithbilal`. **Permanent — cannot ever be changed.** Spend ten minutes on it. |
-| **Display name** | Bilal Sagheer |
-| **Photo** | Reuse the existing one — it's good. Face, plain background, professional. |
-| **Language** | English — Fluent or Conversational (honestly). Urdu — Native. |
-| **Country** | Pakistan. Don't hide it; it's caught at withdrawal anyway. |
+| **Username** | `@bilaledits__` — stays as-is. Don't explain or reference it anywhere. |
+| **Display name** | Bilal Sagheer — already set. This is what buyers see in search results, not the username. |
+| **Photo** | The current one is good. Face, plain background, professional. Keep it. |
+| **Language** | English, Urdu — already set. |
+| **Country** | Pakistan — already set. |
 
 ## Professional tagline
 
@@ -31,8 +31,8 @@ I build business software in Next.js — dashboards, web apps and desktop tools
 
 ## Occupation
 
-**Programming & Tech → Web Development**, from [his real start year in
-development] — not Video & Animation. Skills:
+**Change from Video & Animation → Programming & Tech → Web Development**, from
+[his real start year in development]. Skills:
 Next.js, React, Supabase, PostgreSQL, JavaScript, Node.js, Electron, React Native.
 
 ## Skills (set levels honestly)
@@ -52,9 +52,9 @@ Next.js, React, Supabase, PostgreSQL, JavaScript, Node.js, Electron, React Nativ
 
 Don't mark everything Expert. Being calibrated costs nothing and reads as adult.
 
-**No video skills at all** — no Premiere Pro, After Effects, colour grading,
-motion graphics or video editing. A profile listing both reads as someone who
-does neither.
+**Remove every video skill** — Premiere Pro, After Effects, colour grading,
+motion graphics, video editing. All of it. A profile listing both reads as
+someone who does neither.
 
 ---
 
