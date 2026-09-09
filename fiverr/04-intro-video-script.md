@@ -1,26 +1,28 @@
-# Fiverr intro video — script & shot list
+# Fiverr intro video — profile script & shot list
 
-Target: **60 seconds**. Fiverr's hard cap is 75 — don't use it all. Nobody
-watches a full 75-second seller video, and the last 15 seconds are where people
-click away.
+This is the **profile** video — it sells the range of what Bilal does, not one
+project. The petrol station system appears in it, but as proof, not as the
+subject. A profile video that's really a case study makes buyers think you only
+do that one thing.
 
-## Fiverr's rules — a video that breaks these gets rejected
+Target: **60 seconds**. Fiverr's cap is 75 — don't use it. Nobody watches a full
+75-second seller video, and the last 15 seconds are where people click away.
 
-- **No contact details.** No email, phone, WhatsApp, website, or social handles,
-  spoken or on screen. Check the screen recording for a browser bookmarks bar.
+## Fiverr's rules — break these and it gets rejected
+
+- **No contact details.** No email, phone, WhatsApp, website or social handles,
+  spoken or on screen. Check the browser for a bookmarks bar before recording.
 - **No prices or rates.** Not spoken, not on screen.
-- **No external links or logos** of other platforms.
-- **Show your face**, at least at the start. Fiverr weights this and buyers
-  respond to it.
-- Speak English throughout. Accent is fine — clarity matters, polish doesn't.
+- **No external links or other platforms' logos.**
+- **Show your face**, at least at the start. Fiverr weights it and buyers respond.
+- English throughout. Accent is fine — clarity matters, polish doesn't.
 
 ## Before recording: the data problem
 
-The screen recording carries the same risk as the screenshots. Either:
-- Set `BUSINESS_NAME` in `app/_lib/brand.js` to something invented and point at
-  a dev database with fake data, **or**
-- Only record screens where the sidebar is the sole identifier, and blur it in
-  post — which Bilal can do, since he can edit.
+Any footage of the petrol station app carries the same risk as the screenshots.
+Either set `BUSINESS_NAME` in `app/_lib/brand.js` to something invented and
+point it at a dev database with fake data, or record only screens where the
+sidebar is the sole identifier and blur it in post.
 
 **Never film the Customers page or the Activity log.** Real names and phone
 numbers in a public video can't be un-published.
@@ -29,56 +31,53 @@ numbers in a public video can't be un-published.
 
 ## The script
 
-Word counts are tuned to ~150 words/minute. Bilal should read it once out loud
-and adjust anything that doesn't sound like him — a script he's fighting sounds
-like a script.
+~139 words, ~56 seconds at a natural pace. Bilal should read it aloud once and
+change anything that doesn't sound like him — a script someone is fighting
+sounds like a script.
 
 ### [0:00 – 0:08] ON CAMERA
 
-> "Hi, I'm Bilal. I build the software small businesses actually run on —
-> dashboards, internal tools, and web apps."
+> "Hi, I'm Bilal, a web developer. I build fast websites and business web
+> applications in Next.js and React."
 
-*Look at the lens, not at yourself. Slight smile. This is the only shot most
-people judge you on.*
+*Look at the lens, not at yourself. Slight smile. This is the shot most people
+judge you on.*
 
-### [0:08 – 0:19] SCREEN RECORDING — Dashboard
+### [0:08 – 0:20] SCREEN — montage of live sites
 
-> "This is a management system a petrol station uses every single day. Their
-> whole business is in here — daily takings, fuel stock, customer credit,
-> and profit."
+> "Marketing sites and landing pages that load fast and look right on every
+> screen. Designs from Figma turned into real, working code — matching the file,
+> not approximating it."
 
-*Slow cursor move across the four stat cards. No clicking yet.*
+*Three or four sites, 3 seconds each. Scroll each one smoothly — a fast scroll
+down a good page sells speed better than any claim about it. Include one
+phone-width view so "every screen" is shown rather than said.*
 
-### [0:19 – 0:33] SCREEN RECORDING — Daily readings, then Sale & Stock Register
+### [0:20 – 0:35] SCREEN — the petrol station system
 
-> "Staff type in the meter readings each evening. The app works out what was
-> sold, splits it into cash and credit, and tells the owner what should be in
-> the drawer — before he counts it."
+> "And the bigger thing I do: business software. This is a management system a
+> petrol station runs on every single day — daily takings, stock, customer
+> credit, profit. Two user roles, with permissions enforced in the database."
 
-*Click into Readings, scroll one nozzle card into view, then cut to the register
-and let the gain/loss column sit on screen for a beat.*
+*Dashboard first, then the Sale & Stock Register. Let the gain/loss column sit
+on screen for a beat. This is the segment that separates him from every other
+Next.js seller — give it the most time.*
 
-### [0:33 – 0:41] SCREEN RECORDING — Reports
+### [0:35 – 0:46] BACK ON CAMERA
 
-> "At the end of the month, one page: sales, costs, profit, and a spreadsheet
-> for the accountant."
+> "Whatever I build, you get the same three things. It's deployed and live. You
+> get the code. And you get a README your next developer can actually follow."
 
-*Land on the profit figure. Hover the Download Excel button — don't click.*
+*Slow down here. This is the trust beat, and it's the answer to the fear every
+Fiverr buyer has — being handed something they can't maintain.*
 
-### [0:41 – 0:51] BACK ON CAMERA
+### [0:46 – 0:57] ON CAMERA — close
 
-> "I build these in Next.js and Supabase. Admin dashboards, business web apps,
-> marketing sites, and Figma designs turned into real, working code."
+> "Message me before you order. Tell me what you're building, and I'll tell you
+> honestly which package you need — or if I'm not the right fit."
 
-### [0:51 – 1:01] ON CAMERA — close
-
-> "Send me a message with what you're trying to build, and I'll tell you
-> honestly whether I'm the right person for it. Thanks for watching."
-
-*Stop recording two seconds after you finish speaking. Don't trail off, don't
-wave, don't say "bye guys".*
-
-**Total: ~60 seconds, ~150 words.**
+*Stop recording two seconds after the last word. Don't trail off, don't wave,
+don't say "bye guys".*
 
 ---
 
@@ -87,14 +86,20 @@ wave, don't say "bye guys".*
 | # | Shot | Length |
 |---|---|---|
 | 1 | On camera — opening | 8s |
-| 2 | Screen — Dashboard | 11s |
-| 3 | Screen — Readings → Sale & Stock Register | 14s |
-| 4 | Screen — Reports | 8s |
-| 5 | On camera — stack and services | 10s |
-| 6 | On camera — close | 10s |
+| 2 | Screen — 3–4 live sites, one at phone width | 12s |
+| 3 | Screen — dashboard, then stock register | 15s |
+| 4 | On camera — what you get | 11s |
+| 5 | On camera — close | 11s |
 
-Record shots 1, 5 and 6 in one sitting, same clothes, same framing. Record the
-screen separately at 1080p, then cut it in underneath the voice.
+Record 1, 4 and 5 in one sitting: same clothes, same framing, same light. Record
+screens separately at 1080p and cut them under the voice.
+
+**Sites to use in the montage** — pick the best-looking three or four:
+- `merdian-consulting.vercel.app`
+- `coffee-shop-2-nu.vercel.app`
+- `services-thechamps.vercel.app`
+- `the-wild-oasis-thechamps.vercel.app`
+- `portfolio-2-rho-umber.vercel.app`
 
 ## Production notes
 
@@ -105,21 +110,25 @@ screen separately at 1080p, then cut it in underneath the voice.
   laptop mic across a room. Record somewhere with soft furnishings; a bare tiled
   room sounds like a bathroom.
 - **Screen recording:** 1080p, clean browser — no bookmarks bar, no other tabs,
-  no notifications. Move the cursor slowly and deliberately. Fast cursor movement
-  reads as nervous.
-- **Cuts:** hard cuts only. No swipes, no zoom transitions, no whooshes. This is
-  a developer's video, not a reel — restraint reads as senior.
-- **Music:** either none, or something flat and quiet at about 10% under the
-  voice. If it competes with the words, it's too loud.
-- **No captions burned in** unless the audio is genuinely hard to follow. Fiverr
-  shows the video small.
+  no notifications. Move the cursor slowly. Fast cursor movement reads as nervous.
+- **Cuts:** hard cuts only. No swipes, no zoom transitions, no whooshes.
+- **Music:** none, or something flat at about 10% under the voice. If it
+  competes with the words, it's too loud.
 - **Export:** MP4, 1080p, under 50 MB.
 
 ## The thing worth saying to Bilal
 
-He already knows how to do all of this. The temptation will be to make it good —
-colour grade it, add motion graphics, cut it fast. Resist that. A developer's
+He already knows how to do all of this, and the temptation will be to make it
+*good* — grade it, add motion graphics, cut it fast. Resist that. A developer's
 intro video that looks like an ad reads as a marketer pretending to code. The
 edit should be invisible: clean audio, steady framing, hard cuts, nothing else.
 
 The skill shows up as the absence of mistakes, not the presence of effects.
+
+---
+
+## If you also want a per-gig video later
+
+Gig videos sit on the gig page and can be much more specific — one project, one
+outcome, 30–45 seconds. Worth doing for the dashboard gig once the profile video
+is up. Same rules, same restraint.
