@@ -83,8 +83,8 @@ I will build an admin dashboard or internal tool with nextjs and supabase
 
 **Description**
 ```
-I build the internal tools businesses actually run on — the screen where staff
-enter the day's numbers, and the one where the owner reads what they mean.
+I build the internal tools businesses run on — the screen where staff enter the
+day's numbers, and the one where the owner reads what they mean.
 
 WHAT MAKES THIS DIFFERENT FROM A GENERIC CRUD APP
 I put your business rules in the database, not just in the form. If two figures
@@ -92,10 +92,10 @@ must always add up, if a number can never go backwards, if history must never
 be edited — I enforce that in Postgres, where no bug and no leaked key can get
 around it. Form validation alone is a suggestion.
 
-I have built exactly this: a system a fuel business uses daily, with two user
-roles, row-level security, append-only customer ledgers, cash reconciliation
-and monthly profit reporting. Staff enter the day's trade but never see profit,
-expenses or bank balances — enforced in three independent layers.
+I have built this: a system a fuel business uses daily, with two roles,
+row-level security, append-only ledgers, cash reconciliation and monthly profit
+reporting. Staff enter the day's trade but never see profit, expenses or bank
+balances — enforced in three independent layers.
 
 WHAT YOU GET
 • Login and accounts, with real roles and permissions
@@ -402,8 +402,8 @@ WHAT YOU GET
 I ported a full business management system — readings, stock, ledgers and Excel
 export — to an offline Windows program with bundled Postgres.
 
-SELLING YOUR APP? I also build offline licensing: signed keys verified without
-internet, activation windows, and remote revocation. Ask me.
+SELLING YOUR APP? I also build offline licensing: signed keys verified with no
+internet, activation windows, remote revocation. Ask me.
 ```
 
 **Packages**
